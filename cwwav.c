@@ -336,6 +336,7 @@ int main(int argc, char *argv[]) {
 	init();
 	setup_output();
 
+	send_space(7);
 	if (optind == argc) {
 		fprintf(stderr, "Processing standard input\n");
 		text_to_morse(stdin);
@@ -352,6 +353,7 @@ int main(int argc, char *argv[]) {
 		fclose(f);
 		optind++;
 	}
+	send_space(7);
 	close_output();
 	exit(0);
 }
