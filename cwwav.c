@@ -4,9 +4,10 @@
 #include <stdint.h>
 #include <sndfile.h>
 #include <math.h>
+#include <getopt.h>
 
-#if 1
-#define dprintf(args...) printf(args)
+#if 0
+#define dprintf(args...) fprintf(stderr, args)
 #else
 #define dprintf(args...)
 #endif
@@ -21,6 +22,8 @@ struct waveform dah;
 struct waveform gap;
 
 static SNDFILE *sf;
+
+char *outfname = NULL;
 
 /* Set before calling init */
 int wpm = 25;
@@ -205,6 +208,12 @@ void send_char(int ch)
 	}
 }
 
+void close_output()
+{
+	if (sf)
+		sf_close(sf);
+}
+
 void setup_output()
 {
 	struct SF_INFO i;
@@ -212,23 +221,23 @@ void setup_output()
 	i.samplerate = samplerate;
 	i.channels = 1;
 	i.format = SF_FORMAT_WAV | SF_FORMAT_PCM_16;
-	sf = sf_open("cw.wav", SFM_WRITE, &i);
+	if (outfname) {
+		sf = sf_open(outfname, SFM_WRITE, &i);
+	} else {
+		sf = sf_open_fd(1, SFM_WRITE, &i, 0);
+	}
 	if (!sf) {
 		fprintf(stderr, "sndfile open failed: %s\n", sf_strerror(NULL));
 		exit(1);
 	}
 }
 
-int main(int argc, char **argv[]) {
+int text_to_morse(FILE *f) {
+	int space = 0;
+	int nl = 0;
 	int c;
-	int space,nl;
-	frequency = 750;
-	wpm = 25;
-	init();
-	setup_output();
-	space = 0;
-	nl = 0;
-	while ((c = fgetc(stdin)) != EOF) {
+	
+	while ((c = fgetc(f)) != EOF) {
 		if (c == 13)
 			continue;
 		if (c == 10) {
@@ -257,4 +266,71 @@ int main(int argc, char **argv[]) {
 		send_space(3);
 		send_char(c);
 	}
+}
+
+
+int main(int argc, char *argv[]) {
+	int c;
+	int space,nl;
+	FILE *f;
+
+	int option_index = 0;
+	static struct option long_options[] = {
+			{ "output", required_argument, 0, 'o' },
+			{ "frequency", required_argument, 0, 'f' },
+			{ "wpm", required_argument, 0, 'w' },
+			{0, 0, 0, 0} };
+
+	frequency = 750;
+	wpm = 25;
+
+	while (1) {
+		int c = getopt_long(argc, argv, "o:f:w:", long_options,
+			&option_index);
+		if (c == -1)
+			break;
+		switch (c) {
+		case 'o':
+			outfname = optarg;
+			break;
+		case 'f':
+			frequency = atoi(optarg);
+			break;
+		case 'w':
+			wpm = atoi(optarg);
+			break;
+		case '?':
+			/* getopt_long printed the error message */
+			exit(1);
+		default:
+			fprintf(stderr, "Unexpected error parsing options\n");
+			exit(1);
+		}
+	}
+
+	if (!outfname) {
+		fprintf(stderr, "Error: Must specify output file with --output\n");
+		exit(1);
+	}
+
+	init();
+	setup_output();
+
+	if (optind == argc) {
+		fprintf(stderr, "Processing standard input\n");
+		text_to_morse(stdin);
+	}
+	while (optind < argc) {
+		fprintf(stderr, "Processing file: %s\n", argv[optind]);
+		f = fopen(argv[optind], "rb");
+		if (!f) {
+			fprintf(stderr, "Error opening %s: %m\n",
+				argv[optind]);
+			exit(1);
+		}
+		text_to_morse(f);
+		fclose(f);
+	}
+	close_output();
+	exit(0);
 }
