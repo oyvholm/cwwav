@@ -1,2 +1,3 @@
 CC=gcc
-LDFLAGS=-lm -lsndfile
+CFLAGS=-ggdb
+LDFLAGS=-lm -lsndfile -ggdb

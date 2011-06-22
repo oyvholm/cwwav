@@ -28,6 +28,8 @@ char *outfname = NULL;
 /* Set before calling init */
 int wpm = 25;
 int frequency = 600;
+int stereo = 0;
+double envelope = 5.0;
 
 /* Set by init() */
 int samplerate;
@@ -136,11 +138,11 @@ void init()
 	if (ms_per_dit < 2)
 		ms_per_dit = 2;
 	dit.length = ceil((samplerate/1000.0)*(double)ms_per_dit);
-	dit.samples = malloc(dit.length * sizeof(dit.samples[0]));
+	dit.samples = malloc(dit.length * sizeof(dit.samples[0]) * (stereo ? 2 : 1));
 	dah.length = dit.length * 3;
-	dah.samples = malloc(dah.length * sizeof(dah.samples[0]));
+	dah.samples = malloc(dah.length * sizeof(dah.samples[0]) * (stereo ? 2 : 1));
 	gap.length = dit.length;
-	gap.samples = malloc(gap.length * sizeof(gap.samples[0]));
+	gap.samples = malloc(gap.length * sizeof(gap.samples[0]) * (stereo ? 2 : 1));
 	dprintf("ms/samples per dit: %d/%d dah: %d/%d\n", ms_per_dit, dit.length, 3*ms_per_dit, dah.length);
 	if (dit.samples == NULL || dah.samples == NULL || gap.samples == NULL) {
 		fprintf(stderr, "Error allocating buffer\n");
@@ -156,9 +158,9 @@ void init()
 	for (c=0; c<dah.length; c++) {
 		dah.samples[c] = 16383 * sin((c/samples_per_cycle) * pi * 2.0);
 	}
-	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0]));
+	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0])*stereo?2:1);
 	/* Apply envelope, 5ms sine hold rise and fall */
-	double samples_in_envelope = 5.0*samplerate/1000.0;
+	double samples_in_envelope = envelope*samplerate/1000.0;
 	for (c=0; c<samples_in_envelope; c++) {
 		double factor = sin((pi/2.0)*(c/(double)samples_in_envelope));
 		dit.samples[c] = round((double)dit.samples[c] * factor);
@@ -170,6 +172,16 @@ void init()
 	for (c=0; c<dit.length; c++)
 	{
 		dprintf("%d,%d\n", c, dit.samples[c]);
+	}
+#endif
+#if 1
+	if (stereo) {
+		for (c=2*dit.length-3; c>=0; c-=2) {
+			dit.samples[c] = dit.samples[c+1] = dit.samples[c/2];
+		}
+		for (c=2*dah.length-3; c>=0; c-=2) {
+			dah.samples[c] = dah.samples[c+1] = dah.samples[c/2];
+		}
 	}
 #endif
 }
@@ -219,7 +231,7 @@ void setup_output()
 	struct SF_INFO i;
 	memset(&i, 0, sizeof(i));
 	i.samplerate = samplerate;
-	i.channels = 1;
+	i.channels = stereo ? 2 : 1;
 	i.format = SF_FORMAT_WAV | SF_FORMAT_PCM_16;
 	if (outfname) {
 		sf = sf_open(outfname, SFM_WRITE, &i);
@@ -276,25 +288,33 @@ int main(int argc, char *argv[]) {
 
 	int option_index = 0;
 	static struct option long_options[] = {
+			{ "stereo", no_argument, 0, 's' },
 			{ "output", required_argument, 0, 'o' },
 			{ "frequency", required_argument, 0, 'f' },
 			{ "wpm", required_argument, 0, 'w' },
+			{ "envelope", required_argument, 0, 'e' },
 			{0, 0, 0, 0} };
 
 	frequency = 750;
 	wpm = 25;
+	envelope = 5.0; /* ms */
 
 	while (1) {
-		int c = getopt_long(argc, argv, "o:f:w:", long_options,
+		int c = getopt_long(argc, argv, "so:f:w:e:", long_options,
 			&option_index);
 		if (c == -1)
 			break;
 		switch (c) {
+		case 's':
+			stereo = 1;
 		case 'o':
 			outfname = optarg;
 			break;
 		case 'f':
 			frequency = atoi(optarg);
+			break;
+		case 'e':
+			envelope = atof(optarg);
 			break;
 		case 'w':
 			wpm = atoi(optarg);
@@ -330,6 +350,7 @@ int main(int argc, char *argv[]) {
 		}
 		text_to_morse(f);
 		fclose(f);
+		optind++;
 	}
 	close_output();
 	exit(0);
