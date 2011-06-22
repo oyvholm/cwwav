@@ -27,7 +27,7 @@ char *outfname = NULL;
 
 /* Set before calling init */
 int wpm = 25;
-int frequency = 600;
+int frequency = 750;
 int stereo = 0;
 double envelope = 5.0;
 
@@ -280,6 +280,19 @@ int text_to_morse(FILE *f) {
 	}
 }
 
+void print_help(const char *progname)
+{
+	printf("Usage: %s OPTIONS [FILENAME...]\n"
+	       "Convert text into a WAV file with morse code.\n"
+	       "\n"
+	       "Mandatory arguments to long options are mandatory for short options too.\n"
+	       "  -s, --stereo       generate stereo output (two identical channels)\n"
+	       "  -o, --output       specify output file (must be supplied)\n"
+	       "  -f, --frequency=N  use sidetone frequency N Hz (default: 750)\n"
+	       "  -w, --wpm=N        use N words per minute (default: 25)\n"
+	       "  -e, --envelope=N   envelope N ms at start/end of each tone (default=10)\n"
+	       "  -h, --help         display this help and exit\n", progname);
+}
 
 int main(int argc, char *argv[]) {
 	int c;
@@ -288,6 +301,7 @@ int main(int argc, char *argv[]) {
 
 	int option_index = 0;
 	static struct option long_options[] = {
+			{ "help", no_argument, 0, 'h' },
 			{ "stereo", no_argument, 0, 's' },
 			{ "output", required_argument, 0, 'o' },
 			{ "frequency", required_argument, 0, 'f' },
@@ -300,11 +314,14 @@ int main(int argc, char *argv[]) {
 	envelope = 5.0; /* ms */
 
 	while (1) {
-		int c = getopt_long(argc, argv, "so:f:w:e:", long_options,
+		int c = getopt_long(argc, argv, "hso:f:w:e:", long_options,
 			&option_index);
 		if (c == -1)
 			break;
 		switch (c) {
+		case 'h':
+			print_help(argv[0]);
+			exit(0);
 		case 's':
 			stereo = 1;
 		case 'o':
@@ -329,7 +346,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	if (!outfname) {
-		fprintf(stderr, "Error: Must specify output file with --output\n");
+		fprintf(stderr, "Error: Must specify output file with --output (try --help)\n");
 		exit(1);
 	}
 
