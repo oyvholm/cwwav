@@ -1,0 +1,94 @@
+
+cwwav
+=====
+
+Copyright (C) 2011 by Thomas Horsten
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+What and why
+============
+
+This program takes one or more text files (or text read from standard
+input) and converts it into a WAV (audio) file containing CW (Morse
+code).
+
+It's useful for generating practice files if you are learning CW and
+want to practice by listening to text on your iPod, phone, laptop or
+whatever.
+
+It's a very simple program but it is designed to do what it does
+well. That is, it is designed to produce good sounding CW output
+files, with proper timing and comfortable envelope to avoid keyclicks
+and make the CW softer.
+
+This is a VERY EARLY alpha release, there are still many more features
+to be added such as better mapping for some characters and prosigns.
+
+But it does generate nice practice fiels!
+
+
+Installation
+============
+
+Make sure you have libsndfile-dev installed. On Ubuntu this is easy:
+
+  $ sudo apt-get install libsndfile-dev
+
+Then compile the program:
+
+  $ make
+
+If that works out, you can run it directly from the current directory, or
+install it system-wide by doing:
+
+  $ sudo make install
+
+
+How to use
+==========
+
+Usage: cwwav OPTIONS [FILENAME...]
+Convert text into a WAV file with morse code.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -s, --stereo       generate stereo output (two identical channels)
+  -o, --output       specify output file (must be supplied)
+  -f, --frequency=N  use sidetone frequency N Hz (default: 750)
+  -r, --rate=N       sample rate N (default 44100)
+  -w, --wpm=N        use N words per minute (default: 25)
+  -e, --envelope=N   envelope N ms at start/end of each tone (default=10)
+  -h, --help         display this help and exit
+
+Example
+=======
+
+I took the "printable" version of the James Clerk Maxwell article on
+Wikipedia and covnerted into text (examples/maxwell.txt).
+
+Then I converted it to a 20-WPM CW file like this:
+
+ $ ./cwwav --output maxwell.wav --frequency=650 --rate=16000 --wpm=20 examples/maxwell.txt
+
+Then I converted the resulting WAV file into an MP3 file using lame:
+
+ $ lame --preset phone maxwell.wav maxwell.mp3
+
+Finally I deleted the intermediate maxwell.wav file and copied the
+resulting maxwell.mp3 file to my phone.
+
+I hope you enjoy this program and find it useful for generating
+practice files. Any commends, suggestions etc. are very welcome, my
+email address is thomas@ at horsten dot com.
