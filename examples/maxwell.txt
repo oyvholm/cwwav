@@ -1,0 +1,154 @@
+Taken from the Wikipedia article about James Clerk Maxwell on 23 June 2011.
+
+James Clerk Maxwell of Glenlair FRS FRSE (13 June 1831 – 5 November 1879) was a Scottish physicist and mathematician. His most prominent achievement was formulating classical electromagnetic theory. This united all previously unrelated observations, experiments and equations of electricity, magnetism and even optics into a consistent theory. Maxwell's equations demonstrated that electricity, magnetism and even light are all manifestations of the same phenomenon, namely the electromagnetic field. Subsequently, all other classic laws or equations of these disciplines became simplified cases of Maxwell's equations. Maxwell's achievements concerning electromagnetism have been called the "second great unification in physics", after the first one realised by Isaac Newton. He was the first cousin of notable 19th century artist Jemima Blackburn.
+
+Maxwell demonstrated that electric and magnetic fields travel through space in the form of waves, and at the constant speed of light. In 1865 Maxwell published A Dynamical Theory of the Electromagnetic Field. It was with this that he first proposed that light was in fact undulations in the same medium that is the cause of electric and magnetic phenomena. His work in producing a unified model of electromagnetism is one of the greatest advances in physics.
+
+Maxwell also helped develop the Maxwell–Boltzmann distribution, which is a statistical means of describing aspects of the kinetic theory of gases. These two discoveries helped usher in the era of modern physics, laying the foundation for such fields as special relativity and quantum mechanics.
+
+Maxwell is also known for presenting the first durable colour photograph in 1861 and for his foundational work on the rigidity of rod-and-joint frameworks like those in many bridges.
+
+Maxwell is considered by many physicists to be the 19th-century scientist who had the greatest influence on 20th-century physics. His contributions to the science are considered by many to be of the same magnitude as those of Isaac Newton and Albert Einstein. In the millennium poll—a survey of the 100 most prominent physicists—Maxwell was voted the third greatest physicist of all time, behind only Newton and Einstein. On the centennial of Maxwell's birthday, Einstein himself described Maxwell's work as the "most profound and the most fruitful that physics has experienced since the time of Newton." Einstein kept a photograph of Maxwell on his study wall, alongside pictures of Michael Faraday and Newton.
+
+Life
+
+Early life, 1831–39
+
+James Clerk Maxwell was born 13 June 1831 at 14 India Street, Edinburgh, to John Clerk, an advocate, and Frances Cay. Maxwell's father was a man of comfortable means, related to the Clerk family of Penicuik, Midlothian, holders of the baronetcy of Clerk of Penicuik; his brother being the 6th Baronet. He had been born John Clerk, adding the surname Maxwell to his own after he inherited a country estate in Middlebie, Kirkcudbrightshire from connections to the Maxwell family, themselves members of the peerage.
+
+Maxwell's parents did not meet and marry until they were well into their thirties, which was unusual for the time; moreover, his mother was nearly 40 years old when James was born. They had had one earlier child, a daughter, Elizabeth, who died in infancy. They named their only surviving child James, a name that had sufficed not only for his grandfather, but also many of his other ancestors.
+
+When Maxwell was young his family moved to Glenlair House, which his parents had built on the 1500 acre (6.1 km2) Middlebie estate. All indications suggest that Maxwell had maintained an unquenchable curiosity from an early age. By the age of three, everything that moved, shone, or made a noise drew the question: "what's the go o' that?". In a passage added to a letter from his father to his sister-in-law Jane Cay in 1834, his mother described this innate sense of inquisitiveness:
+
+"He is a very happy man, and has improved much since the weather got moderate; he has great work with doors, locks, keys, etc., and "show me how it doos" is never out of his mouth. He also investigates the hidden course of streams and bell-wires, the way the water gets from the pond through the wall..."
+
+Education, 1839–47
+
+Recognising the potential of the young boy, his mother Frances took responsibility for James' early education, which in the Victorian era was largely the job of the woman of the house. She was however taken ill with abdominal cancer, and after an unsuccessful operation, died in December 1839 when Maxwell was only eight. James' education was then overseen by John Maxwell and his sister-in-law Jane, both of whom played pivotal roles in the life of Maxwell. His formal schooling began unsuccessfully under the guidance of a sixteen-year-old hired tutor. Little is known about the young man John Maxwell hired to instruct his son, except that he treated the younger boy harshly, chiding him for being slow and wayward. John Maxwell dismissed the tutor in November 1841, and after considerable thought, sent James to the prestigious Edinburgh Academy. He lodged during term times at the house of his aunt Isabella. During this time his passion for drawing was encouraged by his older cousin Jemima, who was herself a talented artist.
+
+The ten-year-old Maxwell, having been raised in isolation on his father's countryside estate, did not fit in well at school. The first year had been full, obliging him to join the second year with classmates a year his senior. His mannerisms and Galloway accent struck the other boys as rustic, and his having arrived on his first day of school wearing a pair of homemade shoes and a tunic, earned him the unkind nickname of "Daftie". Maxwell, however, never seemed to have resented the epithet, bearing it without complaint for many years. Social isolation at the Academy ended when he met Lewis Campbell and Peter Guthrie Tait, two boys of a similar age who were to become notable scholars later in life. They would remain lifetime friends.
+
+Maxwell was fascinated by geometry at an early age, rediscovering the regular polyhedron before any formal instruction. Much of his talent however, went overlooked, and despite winning the school's scripture biography prize in his second year his academic work remained unnoticed until, at the age of 13, he won the school's mathematical medal and first prize for both English and poetry.
+
+Maxwell wrote his first scientific paper at the age of 14. In it he described a mechanical means of drawing mathematical curves with a piece of twine, and the properties of ellipses, Cartesian ovals, and related curves with more than two foci. His work, Oval Curves, was presented to the Royal Society of Edinburgh by James Forbes, who was a professor of natural philosophy at Edinburgh University. Maxwell was deemed too young for the work presented. The work was not entirely original, since Descartes had also examined the properties of such multifocal curves in the seventeenth century, but Maxwell had simplified their construction.
+
+Edinburgh University, 1847–50
+
+Maxwell left the Academy in 1847 at the age of 16 and began attending classes at the University of Edinburgh. Having had the opportunity to attend the University of Cambridge after his first term Maxwell instead decided to complete the full course of his undergraduate studies at Edinburgh. The academic staff of Edinburgh University included some highly regarded names, and Maxwell's first year tutors included Sir William Hamilton, who lectured him on logic and metaphysics, Philip Kelland on mathematics, and James Forbes on natural philosophy. Maxwell, however, did not find his classes at Edinburgh University very demanding, and was therefore able to immerse himself in private study during free time at the university, and particularly when back home at Glenlair. There he would experiment with improvised chemical, electric, and magnetic apparatuses, but his chief concerns regarded the properties of polarized light. He constructed shaped blocks of gelatine, subjected them to various stresses, and with a pair of polarizing prisms given to him by the famous scientist William Nicol he would view the coloured fringes which had developed within the jelly. Through this practice Maxwell discovered photoelasticity, which is a means of determining the stress distribution within physical structures.
+
+Maxwell contributed two papers for the Transactions of the Royal Society of Edinburgh at the age of 18. One of these, On the equilibrium of elastic solids, laid the foundation for an important discovery later in his life, which was the temporary double refraction produced in viscous liquids by shear stress. His other paper was titled Rolling curves, and just as with the paper Oval Curves that he had written at the Edinburgh Academy, Maxwell was again considered too young to stand at the rostrum and present it himself. The paper was delivered to the Royal Society by his tutor Kelland instead.
+
+Cambridge University, 1850–56
+
+In October 1850, already an accomplished mathematician, Maxwell left Scotland for Cambridge University. He initially attended Peterhouse, but before the end of his first term transferred to Trinity College, where he believed it would be easier to obtain a fellowship. At Trinity, he was elected to the elite secret society known as the Cambridge Apostles. In November 1851, Maxwell studied under William Hopkins, whose success in nurturing mathematical genius had earned him the nickname of "senior wrangler-maker". A considerable part of Maxwell's translation of his equations regarding electromagnetism was accomplished during his time at Trinity.
+
+In 1854, Maxwell graduated from Trinity with a degree in mathematics. He scored second highest in the final examination, coming behind Edward Routh, and thereby earning himself the title of Second Wrangler. He was later declared equal with Routh, however, in the more exacting ordeal of the Smith's Prize examination. Immediately after earning his degree, Maxwell read a novel paper to the Cambridge Philosophical Society entitled On the transformation of surfaces by bending. This is one of the few purely mathematical papers he had written, and it demonstrated Maxwell's growing stature as a mathematician. Maxwell decided to remain at Trinity after graduating and applied for a fellowship, which was a process that he could expect to take a couple of years. Buoyed by his success as a research student, he would be free, aside from some tutoring and examining duties, to pursue scientific interests at his own leisure.
+
+The nature and perception of colour was one such interest, and had begun at Edinburgh University while he was a student of Forbes. Maxwell took the coloured spinning tops invented by Forbes, and was able to demonstrate that white light would result from a mixture of red, green and blue light. His paper, Experiments on colour, laid out the principles of colour combination, and was presented to the Royal Society of Edinburgh in March 1855. Fortunately for Maxwell this time it would be he himself who delivered his lecture.
+
+Maxwell was made a fellow of Trinity on 10 October 1855, sooner than was the norm, and was asked to prepare lectures on hydrostatics and optics, and to set examination papers. However, the following February he was urged by Forbes to apply for the newly vacant Chair of Natural Philosophy at Marischal College, Aberdeen. His father assisted him in the task of preparing the necessary references, but he would die on 2 April, at Glenlair before either knew the result of Maxwell's candidacy. Maxwell nevertheless accepted the professorship at Aberdeen, leaving Cambridge in November 1856.
+
+Aberdeen University, 1856–60
+
+The 25-year-old Maxwell was a decade and a half younger than any other professor at Marischal, but engaged himself with his new responsibilities as head of department, devising the syllabus and preparing lectures. He committed himself to lecturing 15 hours a week, including a weekly pro bono lecture to the local working men's college. He lived in Aberdeen during the six months of the academic year, and spent the summers at Glenlair, which he had inherited from his father.
+
+His mind was focused on a problem that had eluded scientists for two hundred years: the nature of Saturn's rings. It was unknown how they could remain stable without breaking up, drifting away or crashing into Saturn. The problem took on a particular resonance at this time as St John's College, Cambridge had chosen it as the topic for the 1857 Adams Prize. Maxwell devoted two years to studying the problem, proving that a regular solid ring could not be stable, and a fluid ring would be forced by wave action to break up into blobs. Since neither was observed, Maxwell concluded that the rings must comprise numerous small particles he called "brick-bats", each independently orbiting Saturn. Maxwell was awarded the £130 Adams Prize in 1859 for his essay On the stability of Saturn's rings; he was the only entrant to have made enough headway to submit an entry. His work was so detailed and convincing that when George Biddell Airy read it he commented "It is one of the most remarkable applications of mathematics to physics that I have ever seen." It was considered the final word on the issue until direct observations by the Voyager flybys of the 1980s confirmed Maxwell's prediction. Maxwell would also go on to disprove mathematically the nebular hypothesis (which stated that the solar system formed through the progressive condensation of a purely gaseous nebula), forcing the theory to account for additional portions of small solid particles.
+
+In 1857 Maxwell befriended the Reverend Daniel Dewar, who was the Principal of Marischal, and through him met Dewar's daughter, Katherine Mary Dewar. They were engaged in February 1858 and married in Aberdeen on 2 June 1859. Comparatively little is known of Katherine, seven years Maxwell's senior. Maxwell's biographer and friend Campbell adopted an uncharacteristic reticence on the subject, though describing their married life as "one of unexampled devotion".
+
+In 1860, Marischal College merged with the neighbouring King's College to form the University of Aberdeen. There was no room for two professors of Natural Philosophy, and Maxwell, despite his scientific reputation, found himself laid off. He was unsuccessful in applying for Forbes' recently vacated chair at Edinburgh, the post instead going to Tait. Maxwell was granted the Chair of Natural Philosophy at King's College London instead. After recovering from a near-fatal bout of smallpox in the summer of 1860, Maxwell headed south to London with his wife Katherine.
+
+King's College London, 1860–65
+
+Maxwell's time at King's was probably the most productive of his career. He was awarded the Royal Society's Rumford Medal in 1860 for his work on colour, and was later elected to the Society in 1861. This period of his life would see him display the world's first light-fast colour photograph, further develop his ideas on the viscosity of gases, and propose a system of defining physical quantities—now known as dimensional analysis. Maxwell would often attend lectures at the Royal Institution, where he came into regular contact with Michael Faraday. The relationship between the two men could not be described as close, as Faraday was 40 years Maxwell's senior and showed signs of senility. They nevertheless maintained a strong respect for each other's talents.
+
+This time is especially known for the advances Maxwell made in the fields of electricity and magnetism. He had examined the nature of both electric and magnetic fields in his two-part paper On physical lines of force, published in 1861, in which he had provided a conceptual model for electromagnetic induction, consisting of tiny spinning cells of magnetic flux. Two more parts later added to the paper were published in early 1862. In the first of these he discussed the nature of electrostatics and displacement current. The final part dealt with the rotation of the plane of polarization of light in a magnetic field, a phenomenon discovered by Faraday and now known as the Faraday effect.
+
+Later years
+
+In 1865, Maxwell resigned the chair at King's College London and returned to Glenlair with Katherine.
+
+He wrote a textbook entitled Theory of Heat (1871), and an elementary treatise, Matter and Motion (1876). Maxwell was also the first to make explicit use of dimensional analysis, in 1871.
+
+In 1871, he became the first Cavendish Professor of Physics at Cambridge. Maxwell was put in charge of the development of the Cavendish Laboratory. He supervised every step in the progress of the building and of the purchase of the very valuable collection of apparatus paid for by its generous founder, the 7th Duke of Devonshire (chancellor of the university, and one of its most distinguished alumni). One of Maxwell's last great contributions to science was the editing (with copious original notes) of the electrical researches of Henry Cavendish, from which it appeared that Cavendish researched, amongst other things, such questions as the mean density of the earth and the composition of water.
+
+He died in Cambridge of abdominal cancer on 5 November 1879 at the age of 48. His mother had died at the same age of the same type of cancer. Maxwell is buried at Parton Kirk, near Castle Douglas in Galloway, Scotland. The extended biography The Life of James Clerk Maxwell, by his former schoolfellow and lifelong friend Professor Lewis Campbell, was published in 1882. His collected works, including the series of articles on the properties of matter, such as "Atom", "Attraction", "Capillary action", "Diffusion", "Ether", etc., were issued in two volumes by the Cambridge University Press in 1890.
+
+Personality
+
+As a great lover of Scottish poetry, Maxwell memorised poems and wrote his own. The best known is Rigid Body Sings, closely based on Comin' Through the Rye by Robert Burns, which he apparently used to sing while accompanying himself on a guitar. It has the immortal opening lines
+
+Gin a body meet a body
+
+Flyin' through the air.
+
+Gin a body hit a body,
+
+Will it fly? And where?
+
+A collection of his poems was published by his friend Lewis Campbell in 1882.
+
+Ivan Tolstoy, author of one of Maxwell's biographies, remarked at the frequency with which scientists writing short biographies on Maxwell often omit the subject of his Christianity. He was an evangelical Presbyterian, and in his later years became an Elder of the Church of Scotland. Maxwell's religious beliefs and related activities have been the focus of several peer-reviewed and well-referenced papers. Attending both Church of Scotland (his father's denomination) and Episcopalian (his mother's denomination) services as a child, Maxwell later underwent an evangelical conversion in April 1853, which committed him to an anti-positivist position.
+
+Contributions
+
+Electromagnetism
+
+Maxwell had studied and commented on the field of electricity and magnetism as early as 1855/6 when "On Faraday's lines of force" was read to the Cambridge Philosophical Society. The paper presented a simplified model of Faraday's work, and how the two phenomena were related. He reduced all of the current knowledge into a linked set of differential equations with 20 equations in 20 variables. This work was later published as "On physical lines of force" in March 1861.
+
+Around 1862, while lecturing at King's College, Maxwell calculated that the speed of propagation of an electromagnetic field is approximately that of the speed of light. He considered this to be more than just a coincidence, and commented "We can scarcely avoid the conclusion that light consists in the transverse undulations of the same medium which is the cause of electric and magnetic phenomena."
+
+Working on the problem further, Maxwell showed that the equations predict the existence of waves of oscillating electric and magnetic fields that travel through empty space at a speed that could be predicted from simple electrical experiments; using the data available at the time, Maxwell obtained a velocity of 310,740,000 m/s. In his 1864 paper "A dynamical theory of the electromagnetic field", Maxwell wrote, "The agreement of the results seems to show that light and magnetism are affections of the same substance, and that light is an electromagnetic disturbance propagated through the field according to electromagnetic laws".
+
+His famous equations, in their modern form of four partial differential equations, first appeared in fully developed form in his textbook A Treatise on Electricity and Magnetism in 1873. Most of this work was done by Maxwell at Glenlair during the period between holding his London post and his taking up the Cavendish chair. Maxwell expressed electromagnetism in the algebra of quaternions and made the electromagnetic potential the centerpiece of his theory. In 1881 Oliver Heaviside replaced Maxwell’s electromagnetic potential field by ‘force fields’ as the centerpiece of electromagnetic theory. Heaviside reduced the complexity of Maxwell’s theory down to four differential equations, known now collectively as Maxwell's Laws or Maxwell's equations. According to Heaviside, the electromagnetic potential field was arbitrary and needed to be "murdered". A few years later there was a great debate between Heaviside and Peter Guthrie Tait about the relative merits of vector analysis and quaternions. The result was the realization that there was no need for the greater physical insights provided by quaternions if the theory was purely local, and vector analysis became commonplace.
+
+Maxwell was proven correct, and his quantitative connection between light and electromagnetism is considered one of the great accomplishments of 19th century mathematical physics.
+
+Maxwell also introduced the concept of the electromagnetic field in comparison to force lines that Faraday discovered. By understanding the propagation of electromagnetism as a field emitted by active particles, Maxwell could advance his work on light. At that time, Maxwell believed that the propagation of light required a medium for the waves, dubbed the luminiferous aether. Over time, the existence of such a medium, permeating all space and yet apparently undetectable by mechanical means, proved more and more difficult to reconcile with experiments such as the Michelson–Morley experiment. Moreover, it seemed to require an absolute frame of reference in which the equations were valid, with the distasteful result that the equations changed form for a moving observer. These difficulties inspired Albert Einstein to formulate the theory of special relativity, and in the process Einstein dispensed with the requirement of a luminiferous aether.
+
+Colour analysis
+
+Maxwell contributed to the field of optics and the study of colour vision, creating the foundation for practical colour photography.
+
+From 1855 to 1872, he published at intervals a series of valuable investigations concerning the perception of colour, colour-blindness and colour theory, for the earlier of which the Royal Society awarded him the Rumford Medal. The instruments which he devised for these investigations were simple and convenient to use. For example, Maxwell's discs were used to compare a variable mixture of three primary colours with a sample colour by observing the spinning "colour top."
+
+In the course of his 1855 paper on the perception of colour, Maxwell proposed that if three black-and-white photographs of a scene were taken through red, green and violet filters, and transparent prints of the images were projected onto a screen using three projectors equipped with similar filters, when superimposed on the screen the result would be perceived by the human eye as a complete reproduction of all the colours in the scene.
+
+During an 1861 Royal Institution lecture on colour theory, Maxwell presented the world's first demonstration of colour photography by this principle of three-colour analysis and synthesis, the basis of nearly all subsequent photochemical and electronic methods of colour photography. Thomas Sutton, inventor of the single-lens reflex camera, did the actual picture-taking. He photographed a tartan ribbon three times, through red, green and blue filters. He also made a fourth exposure through a yellow filter, but according to Maxwell's account this was not used in the demonstration. Because Sutton's photographic plates were in fact insensitive to red and barely sensitive to green, the results of this pioneering experiment were far from perfect. It was remarked in the published account of the lecture that "if the red and green images had been as fully photographed as the blue," it "would have been a truly-coloured image of the riband. By finding photographic materials more sensitive to the less refrangible rays, the representation of the colours of objects might be greatly improved."
+
+Researchers in 1961 concluded that the seemingly impossible partial success of the red-filtered exposure was due to ultraviolet light. Some red dyes strongly reflect it, the red filter used does not entirely block it, and Sutton's plates were sensitive to it.
+
+The demonstration was not of a print or transparency containing tangible colouring matter, but of colour which was photographically recorded from nature and reproduced by the same additive colour synthesis principle now used by all common types of colour video displays. Maxwell's purpose was not to present a method of colour photography, but to illustrate the basis of human colour perception and to show that the correct additive primaries are not red, yellow and blue, as was then taught, but red, green and blue.
+
+The three photographic plates now reside in a small museum at 14 India Street, Edinburgh, the house where Maxwell was born.
+
+Kinetic theory and thermodynamics
+
+One of Maxwell's major investigations was on the kinetic theory of gases. Originating with Daniel Bernoulli, this theory was advanced by the successive labours of John Herapath, John James Waterston, James Joule, and particularly Rudolf Clausius, to such an extent as to put its general accuracy beyond a doubt; but it received enormous development from Maxwell, who in this field appeared as an experimenter (on the laws of gaseous friction) as well as a mathematician.
+
+In 1866, he formulated statistically, independently of Ludwig Boltzmann, the Maxwell–Boltzmann kinetic theory of gases. His formula, called the Maxwell distribution, gives the fraction of gas molecules moving at a specified velocity at any given temperature. In the kinetic theory, temperatures and heat involve only molecular movement. This approach generalized the previously established laws of thermodynamics and explained existing observations and experiments in a better way than had been achieved previously. Maxwell's work on thermodynamics led him to devise the Gedankenexperiment (thought experiment) that came to be known as Maxwell's demon.
+
+In 1871, he established Maxwell's thermodynamic relations, which are statements of equality among the second derivatives of the thermodynamic potentials with respect to different thermodynamic variables. In 1874, he constructed a plaster thermodynamic visualisation as a way of exploring phase transitions, based on the American scientist Josiah Willard Gibbs's graphical thermodynamics papers.
+
+Control theory
+
+Maxwell published a famous paper "On governors" in the Proceedings of Royal Society, vol. 16 (1867–1868). This paper is quite frequently considered a classical paper of the early days of control theory. Here governors refer to the governor or the centrifugal governor used in steam engines.
+
+Legacy
+
+Maxwell was ranked 91st on the BBC poll of the 100 Greatest Britons. His name is honoured in a number of ways:
+
+The maxwell (Mx), a compound derived CGS unit measuring magnetic flux.
+Maxwell Montes, a mountain range on Venus, one of only three features on the planet that are not given female names.
+The Maxwell Gap in the Rings of Saturn.
+The James Clerk Maxwell Telescope, the largest submillimetre-wavelength astronomical telescope in the world, with a diameter of 15 metres.
+The 1977 James Clerk Maxwell Building of the University of Edinburgh, housing the schools of mathematics, physics and meteorology.
+The James Clerk Maxwell building at the Waterloo campus of King's College London, in commemoration of his time as Professor of Natural Philosophy at King's from 1860 to 1865. The university also has a chair in Physics named after him, and a society for undergraduate physicists.
+The £4 million James Clerk Maxwell Centre of the Edinburgh Academy was opened in 2006 to mark his 175th anniversary.
+James Clerk Maxwell Road in Cambridge, which runs beside the Cavendish Laboratory.
+The University of Salford's main building is named after him.
+Maxwell bridge, a bridge circuit involving resistors, a capacitor and an inductor
+A statue on Edinburgh's George Street
+A street in Aberdeen's Kincorth area is named after him 
+Thomas Pynchon, an American novelist, alludes to and explains Maxwell's demon in The Crying of Lot 49.
+P J Moore, keyboard player with The Blue Nile is developing a theatre piece based on the life of J.C.M.
