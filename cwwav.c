@@ -1,3 +1,22 @@
+/*
+ * cwwav - a morse code generator
+ * Copyright (C) 2011 by Thomas Horsten
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,7 +61,7 @@ struct morse_code {
 	uint8_t code:5; // if len > 5 then code is index into extended tbl
 };
 
-static const struct morse_code morse_table[] = 
+static const struct morse_code morse_table[] =
 {
   { 0,0 }, {0,0}, {0,0}, {0,0}, // 00-03 Unused
   { 0,0 }, {0,0}, {0,0}, {0,0}, // 04-07 Unused
@@ -113,7 +132,7 @@ static const struct morse_code morse_table[] =
   { 4, 0x0c },  // 90: z: --..
 };
 
-static const uint8_t morse_extended_table[] = 
+static const uint8_t morse_extended_table[] =
 {
   0x2b, /* !: -.-.-- */
   0x12, /* ": .-..-. */
@@ -133,7 +152,6 @@ static const uint8_t morse_extended_table[] =
 void init()
 {
 	int c;
-	samplerate = 44100;
 	ms_per_dit = 1200/wpm;
 	if (ms_per_dit < 2)
 		ms_per_dit = 2;
@@ -149,7 +167,7 @@ void init()
 		exit(1);
 	}
 	double samples_per_cycle = samplerate/(double)frequency;
-	dprintf("frequency: %d samples per cycle: %f\n", 
+	dprintf("frequency: %d samples per cycle: %f\n",
 	       frequency, samples_per_cycle);
 	/* Fill in the raw sine wave */
 	for (c=0; c<dit.length; c++) {
@@ -209,7 +227,7 @@ void send_char(int ch)
 	len = morse_table[ch].len;
 	if (len == 0)
 		return;
-	code = (len > 5 ? morse_extended_table[morse_table[ch].code] : 
+	code = (len > 5 ? morse_extended_table[morse_table[ch].code] :
 		morse_table[ch].code);
 	dprintf("Code: %d\n", code);
 	for (c=0; c<len;c++) {
@@ -248,7 +266,7 @@ int text_to_morse(FILE *f) {
 	int space = 0;
 	int nl = 0;
 	int c;
-	
+
 	while ((c = fgetc(f)) != EOF) {
 		if (c == 13)
 			continue;
@@ -289,6 +307,7 @@ void print_help(const char *progname)
 	       "  -s, --stereo       generate stereo output (two identical channels)\n"
 	       "  -o, --output       specify output file (must be supplied)\n"
 	       "  -f, --frequency=N  use sidetone frequency N Hz (default: 750)\n"
+	       "  -r, --rate=N       sample rate N (default 44100)\n"
 	       "  -w, --wpm=N        use N words per minute (default: 25)\n"
 	       "  -e, --envelope=N   envelope N ms at start/end of each tone (default=10)\n"
 	       "  -h, --help         display this help and exit\n", progname);
@@ -303,18 +322,20 @@ int main(int argc, char *argv[]) {
 	static struct option long_options[] = {
 			{ "help", no_argument, 0, 'h' },
 			{ "stereo", no_argument, 0, 's' },
+			{ "rate", required_argument, 0, 'r' },
 			{ "output", required_argument, 0, 'o' },
 			{ "frequency", required_argument, 0, 'f' },
 			{ "wpm", required_argument, 0, 'w' },
 			{ "envelope", required_argument, 0, 'e' },
 			{0, 0, 0, 0} };
 
+	samplerate = 44100;
 	frequency = 750;
 	wpm = 25;
 	envelope = 5.0; /* ms */
 
 	while (1) {
-		int c = getopt_long(argc, argv, "hso:f:w:e:", long_options,
+		int c = getopt_long(argc, argv, "hsr:o:f:w:e:", long_options,
 			&option_index);
 		if (c == -1)
 			break;
@@ -326,6 +347,9 @@ int main(int argc, char *argv[]) {
 			stereo = 1;
 		case 'o':
 			outfname = optarg;
+			break;
+		case 'r':
+			samplerate = atoi(optarg);
 			break;
 		case 'f':
 			frequency = atoi(optarg);
