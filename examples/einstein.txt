@@ -7,11 +7,10 @@ Albert Einstein, 14 March 1879 – 18 April 1955, was a German-born
 theoretical physicist who developed the theory of general relativity,
 effecting a revolution in physics. For this achievement, Einstein is
 often regarded as the father of modern physics, and one of the most
-prolific intellects in human history.[2] He received the 1921 Nobel
-Prize in Physics "for his services to theoretical physics, and
-especially for his discovery of the law of the photoelectric
-effect".[3] The latter was pivotal in establishing quantum theory
-within physics.
+prolific intellects in human history. He received the 1921 Nobel Prize
+in Physics "for his services to theoretical physics, and especially
+for his discovery of the law of the photoelectric effect". The latter
+was pivotal in establishing quantum theory within physics.
 
 Near the beginning of his career, Einstein thought that Newtonian
 mechanics was no longer enough to reconcile the laws of classical
@@ -25,7 +24,7 @@ theory, which led to his explanations of particle theory and the
 motion of molecules. He also investigated the thermal properties of
 light which laid the foundation of the photon theory of light. In
 1917, Einstein applied the general theory of relativity to model the
-structure of the universe as a whole.[4] He was visiting the United
+structure of the universe as a whole. He was visiting the United
 States when Adolf Hitler came to power in 1933, and did not go back to
 Germany, where he had been a professor at the Berlin Academy of
 Sciences. He settled in the U.S., becoming a citizen in 1940. On the
@@ -39,43 +38,43 @@ Bertrand Russell, Einstein signed the Russell–Einstein Manifesto,
 which highlighted the danger of nuclear weapons. Einstein taught
 physics at the Institute for Advanced Study at Princeton, New Jersey,
 until his death in 1955.  Einstein published more than 300 scientific
-papers along with over 150 non-scientific works.[4][5] His great
+papers along with over 150 non-scientific works. His great
 intelligence and originality have made the word "Einstein" synonymous
-with genius.[6]
+with genius.
 
 Biography
 
 Early life and education
 
 Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the
-German Empire on 14 March 1879.[7] His father was Hermann Einstein, a
+German Empire on 14 March 1879. His father was Hermann Einstein, a
 salesman and engineer. His mother was Pauline Einstein (née Koch). In
 1880, the family moved to Munich, where his father and his uncle
 founded Elektrotechnische Fabrik J. Einstein & Cie, a company that
-manufactured electrical equipment based on direct current.[7]
+manufactured electrical equipment based on direct current.
 
 The Einsteins were non-observant Jews. Albert attended a Catholic
 elementary school from the age of five for three years. Later, at the
 age of eight, Einstein was transferred to the Luitpold Gymnasium where
 he received advanced primary and secondary school education until he
-left Germany seven years later.[8] Although it has been thought that
+left Germany seven years later. Although it has been thought that
 Einstein had early speech difficulties, this is disputed by the Albert
 Einstein Archives, and he excelled at the first school that he
-attended.[9]
+attended.
 
 His father once showed him a pocket compass; Einstein realized that
 there must be something causing the needle to move, despite the
-apparent "empty space".[10] As he grew, Einstein built models and
+apparent "empty space". As he grew, Einstein built models and
 mechanical devices for fun and began to show a talent for
-mathematics.[7] In 1889, Max Talmud (later changed to Max Talmey)
+mathematics. In 1889, Max Talmud (later changed to Max Talmey)
 introduced the ten-year old Einstein to key texts in science,
 mathematics and philosophy, including Immanuel Kant's Critique of Pure
 Reason and Euclid's Elements (which Einstein called the "holy little
-geometry book").[11] Talmud was a poor Jewish medical student from
+geometry book"). Talmud was a poor Jewish medical student from
 Poland. The Jewish community arranged for Talmud to take meals with
 the Einsteins each week on Thursdays for six years. During this time
 Talmud wholeheartedly guided Einstein through many secular educational
-interests.[fn 1][fn 2]
+interests.
 
 In 1894, his father's company failed: direct current (DC) lost the War
 of Currents to alternating current (AC). In search of business, the
@@ -87,18 +86,18 @@ clashed with authorities and resented the school's regimen and
 teaching method. He later wrote that the spirit of learning and
 creative thought were lost in strict rote learning. In the spring of
 1895, he withdrew to join his family in Pavia, convincing the school
-to let him go by using a doctor's note.[7] During this time, Einstein
+to let him go by using a doctor's note. During this time, Einstein
 wrote his first scientific work, "The Investigation of the State of
-Aether in Magnetic Fields".[14]
+Aether in Magnetic Fields".
 
 Einstein applied directly to the Eidgenössische Polytechnische Schule
 (ETH) in Zurich, Switzerland. Lacking the requisite Matura
 certificate, he took an entrance examination, which he failed,
-although he got exceptional marks in mathematics and physics.[15] The
+although he got exceptional marks in mathematics and physics. The
 Einsteins sent Albert to Aarau, in northern Switzerland to finish
-secondary school.[7] While lodging with the family of Professor Jost
+secondary school. While lodging with the family of Professor Jost
 Winteler, he fell in love with Winteler's daughter, Marie. (His sister
-Maja later married the Wintelers' son, Paul.)[16] In Aarau, Einstein
+Maja later married the Wintelers' son, Paul.) In Aarau, Einstein
 studied Maxwell's electromagnetic theory. At age 17, he graduated,
 and, with his father's approval, renounced his citizenship in the
 German Kingdom of Württemberg to avoid military service, and in 1896
@@ -114,17 +113,17 @@ romance, and they read books together on extra-curricular physics in
 which Einstein was taking an increasing interest. In 1900 Einstein was
 awarded the Zurich Polytechnic teaching diploma, but Marić failed the
 examination with a poor grade in the mathematics component, theory of
-functions.[17] There have been claims that Marić collaborated with
-Einstein on his celebrated 1905 papers,[18][19] but historians of
+functions. There have been claims that Marić collaborated with
+Einstein on his celebrated 1905 papers, but historians of
 physics who have studied the issue find no evidence that she made any
-substantive contributions.[20][21][22][23]
+substantive contributions.
 
 Marriages and children
 
 In early 1902, Einstein and Mileva Marić had a daughter they named
 Lieserl in their correspondence, who was born in Novi Sad where
-Marić's parents lived.[24] Her full name is not known, and her fate is
-uncertain after 1903.[25]
+Marić's parents lived. Her full name is not known, and her fate is
+uncertain after 1903.
 
 Einstein and Marić married in January 1903. In May 1904, the couple's
 first son, Hans Albert Einstein, was born in Bern, Switzerland. Their
@@ -138,25 +137,25 @@ having had a relationship with her since 1912. She was his first
 cousin maternally and his second cousin paternally. In 1933, they
 emigrated permanently to the United States. In 1935, Elsa Einstein was
 diagnosed with heart and kidney problems and died in December
-1936.[26]
+1936.
 
 Patent office
 
 After graduating, Einstein spent almost two frustrating years
 searching for a teaching post, but a former classmate's father helped
 him secure a job in Bern, at the Federal Office for Intellectual
-Property, the patent office, as an assistant examiner.[27] He
+Property, the patent office, as an assistant examiner. He
 evaluated patent applications for electromagnetic devices. In 1903,
 Einstein's position at the Swiss Patent Office became permanent,
 although he was passed over for promotion until he "fully mastered
-machine technology".[28]
+machine technology".
 
 Much of his work at the patent office related to questions about
 transmission of electric signals and electrical-mechanical
 synchronization of time, two technical problems that show up
 conspicuously in the thought experiments that eventually led Einstein
 to his radical conclusions about the nature of light and the
-fundamental connection between space and time.[29]
+fundamental connection between space and time.
 
 With a few friends he met in Bern, Einstein started a small discussion
 group, self-mockingly named "The Olympia Academy", which met regularly
@@ -167,11 +166,11 @@ scientific and philosophical outlook.
 Academic career
 
 In 1901, Einstein had a paper on the capillary forces of a straw
-published in the prestigious Annalen der Physik.[30] On 30 April 1905,
+published in the prestigious Annalen der Physik. On 30 April 1905,
 he completed his thesis, with Alfred Kleiner, Professor of
 Experimental Physics, serving as pro-forma advisor. Einstein was
 awarded a PhD by the University of Zurich. His dissertation was
-entitled "A New Determination of Molecular Dimensions".[31] That same
+entitled "A New Determination of Molecular Dimensions". That same
 year, which has been called Einstein's annus mirabilis or "miracle
 year", he published four groundbreaking papers, on the photoelectric
 effect, Brownian motion, special relativity, and the equivalence of
@@ -181,15 +180,15 @@ academic world.
 By 1908, he was recognized as a leading scientist, and he was
 appointed lecturer at the University of Bern. The following year, he
 quit the patent office and the lectureship to take the position of
-physics docent[32] at the University of Zurich. He became a full
+physics docent at the University of Zurich. He became a full
 professor at Karl-Ferdinand University in Prague in 1911. In 1914, he
 returned to Germany after being appointed director of the Kaiser
-Wilhelm Institute for Physics (1914–1932)[33] and a professor at the
+Wilhelm Institute for Physics (1914–1932) and a professor at the
 Humboldt University of Berlin, although with a special clause in his
 contract that freed him from most teaching obligations. He became a
 member of the Prussian Academy of Sciences. In 1916, Einstein was
 appointed president of the German Physical Society
-(1916–1918).[34][35]
+(1916–1918).
 
 In 1911, he had calculated that, based on his new theory of general
 relativity, light from another star would be bent by the Sun's
@@ -199,7 +198,7 @@ eclipse of 29 May 1919. International media reports of this made
 Einstein world famous. On 7 November 1919, the leading British
 newspaper The Times printed a banner headline that read: "Revolution
 in Science – New Theory of the Universe – Newtonian Ideas
-Overthrown".[36] (Much later, questions were raised whether the
+Overthrown". (Much later, questions were raised whether the
 measurements were accurate enough to support Einstein's theory.)
 
 In 1921, Einstein was awarded the Nobel Prize in Physics. Because
@@ -218,7 +217,7 @@ Washington he accompanied representatives of the National Academy of
 Science on a visit to the White House. On his return to Europe he was
 the guest of the British statesman and philosopher Viscount Haldane in
 London, where he met several renowned scientific, intellectual and
-political figures, and delivered a lecture at Kings College.[37]
+political figures, and delivered a lecture at Kings College.
 
 In 1922, he traveled throughout Asia and later to Palestine, as part
 of a six-month excursion and speaking tour. His travels included
@@ -226,9 +225,9 @@ Singapore, Ceylon, and Japan, where he gave a series of lectures to
 thousands of Japanese. His first lecture in Tokyo lasted four hours,
 after which he met the emperor and empress at the Imperial Palace
 where thousands came to watch. Einstein later gave his impressions of
-the Japanese in a letter to his sons:[38]:307 "Of all the people I
+the Japanese in a letter to his sons::307 "Of all the people I
 have met, I like the Japanese most, as they are modest, intelligent,
-considerate, and have a feel for art."[38]:308
+considerate, and have a feel for art.":308
 
 On his return voyage, he also visited Palestine for 12 days in what
 would become his only visit to that region. "He was greeted with great
@@ -243,30 +242,30 @@ I consider this the greatest day of my life. Before, I have always
 found something to regret in the Jewish soul, and that is the
 forgetfulness of its own people. Today, I have been made happy by the
 sight of the Jewish people learning to recognize themselves and to
-make themselves recognized as a force in the world.[39]:308
+make themselves recognized as a force in the world.:308
 
 Emigration from Germany
 
 In 1933, Einstein decided to emigrate to the United States due to the
 rise to power of the Nazis under Germany's new chancellor, Adolf
-Hitler.[40] While visiting American universities in April, 1933, he
+Hitler. While visiting American universities in April, 1933, he
 learned that the new German government had passed a law barring Jews
 from holding any official positions, including teaching at
 universities. A month later, the Nazi book burnings occurred, with
 Einstein's works being among those burnt, and Nazi propaganda minister
-Joseph Goebbels proclaimed, "Jewish intellectualism is dead."[39]
+Joseph Goebbels proclaimed, "Jewish intellectualism is dead."
 Einstein also learned that his name was on a list of assassination
 targets, with a "$5,000 bounty on his head". One German magazine
 included him in a list of enemies of the German regime with the
-phrase, "not yet hanged".[39]
+phrase, "not yet hanged".
 
 Einstein was undertaking his third two-month visiting professorship at
 the California Institute of Technology when Hitler came to power in
 Germany. On his return to Europe in March 1933 he resided in Belgium
-for some months, before temporarily moving to England.[41]
+for some months, before temporarily moving to England.
 
 He took up a position at the Institute for Advanced Study at
-Princeton, New Jersey,[42] an affiliation that lasted until his death
+Princeton, New Jersey, an affiliation that lasted until his death
 in 1955. There, he tried to develop a unified field theory and to
 refute the accepted interpretation of quantum physics, both
 unsuccessfully. He and Kurt Gödel, another Institute member, became
@@ -281,13 +280,13 @@ working side by side, Einstein wrote to a friend, "For me the most
 beautiful thing is to be in contact with a few fine Jews—a few
 millennia of a civilized past do mean something after all." In another
 letter he writes, "In my whole life I have never felt so Jewish as
-now."[39]
+now."
 
 World War II and the Manhattan Project
 
 In 1939, a group of Hungarian scientists that included Hungarian
 emigre physicist Leó Szilárd attempted to alert Washington of ongoing
-Nazi atomic bomb research. The group's warnings were discounted.[43]
+Nazi atomic bomb research. The group's warnings were discounted.
 
 In the summer of 1939, a few months before the beginning of World War
 II in Europe, Einstein was persuaded to lend his prestige by writing a
@@ -300,11 +299,11 @@ research. Einstein and Szilárd, along with other refugees such as
 Edward Teller and Eugene Wigner, "regarded it as their responsibility
 to alert Americans to the possibility that German scientists might win
 the race to build an atomic bomb, and to warn that Hitler would be
-more than willing to resort to such a weapon."[38]:630[44]
+more than willing to resort to such a weapon.":630
 
 The letter is believed to be "arguably the key stimulus for the
 U.S. adoption of serious investigations into nuclear weapons on the
-eve of the U.S. entry into World War II".[45] President Roosevelt
+eve of the U.S. entry into World War II". President Roosevelt
 could not take the risk of allowing Hitler to possess atomic bombs
 first. As a result of Einstein's letter and his meetings with
 Roosevelt, the U.S. entered the "race" to develop the bomb, drawing on
@@ -316,11 +315,11 @@ For Einstein, "war was a disease . . . [and] he called for resistance
 to war." But in 1933, after Hitler assumed full power in Germany, "he
 renounced pacifism altogether . . . In fact, he urged the Western
 powers to prepare themselves against another German
-onslaught."[46]:110 In 1954, a year before his death, Einstein said to
+onslaught.":110 In 1954, a year before his death, Einstein said to
 his old friend, Linus Pauling, "I made one great mistake in my life —
 when I signed the letter to President Roosevelt recommending that atom
 bombs be made; but there was some justification — the danger that the
-Germans would make them..."[47]
+Germans would make them..."
 
 U.S. citizenship
 
@@ -335,23 +334,23 @@ from his own early education. Einstein writes:
 What makes the new arrival devoted to this country is the democratic
 trait among the people. No one humbles himself before another person
 or class. . . American youth has the good fortune not to have its
-outlook troubled by outworn traditions.[39]
+outlook troubled by outworn traditions.
 
 As a member of the National Association for the Advancement of Colored
 People NAACP at Princeton who campaigned for the civil rights of
 African Americans, Einstein corresponded with civil rights activist
 W. E. B. Du Bois, and in 1946 Einstein called racism America's "worst
-disease".[48] He later stated, "Race prejudice has unfortunately
+disease". He later stated, "Race prejudice has unfortunately
 become an American tradition which is uncritically handed down from
 one generation to the next. The only remedies are enlightenment and
-education".[49]
+education".
 
 After the death of Israel's first president, Chaim Weizmann, in
 November 1952, Prime Minister David Ben-Gurion offered Einstein the
-position of President of Israel, a mostly ceremonial post.[50] The
+position of President of Israel, a mostly ceremonial post. The
 offer was presented by Israel's ambassador in Washington, Abba Eban,
 who explained that the offer "embodies the deepest respect which the
-Jewish people can repose in any of its sons".[38]:522 However,
+Jewish people can repose in any of its sons".:522 However,
 Einstein declined, and wrote in his response that he was "deeply
 moved", and "at once saddened and ashamed" that he could not accept
 it:
@@ -361,30 +360,30 @@ natural aptitude and the experience to deal properly with people and
 to exercise official function. I am the more distressed over these
 circumstances because my relationship with the Jewish people became my
 strongest human tie once I achieved complete clarity about our
-precarious position among the nations of the world.[38]:522[50][51]
+precarious position among the nations of the world.:522
 
 Death
 
 On 17 April 1955, Albert Einstein experienced internal bleeding caused
 by the rupture of an abdominal aortic aneurysm, which had previously
-been reinforced surgically by Dr. Rudolph Nissen in 1948.[52] He took
+been reinforced surgically by Dr. Rudolph Nissen in 1948. He took
 the draft of a speech he was preparing for a television appearance
 commemorating the State of Israel's seventh anniversary with him to
-the hospital, but he did not live long enough to complete it.[53]
+the hospital, but he did not live long enough to complete it.
 Einstein refused surgery, saying: "I want to go when I want. It is
 tasteless to prolong life artificially. I have done my share, it is
-time to go. I will do it elegantly."[54] He died in Princeton Hospital
+time to go. I will do it elegantly." He died in Princeton Hospital
 early the next morning at the age of 76, having continued to work
 until near the end.
 
 Einstein's remains were cremated and his ashes were scattered at an
-undisclosed location.[55][56] During the autopsy, the pathologist of
+undisclosed location. During the autopsy, the pathologist of
 Princeton Hospital, Thomas Stoltz Harvey, removed Einstein's brain for
 preservation, without the permission of his family, in hope that the
 neuroscience of the future would be able to discover what made
-Einstein so intelligent.[57] In his lecture at Einstein's memorial,
+Einstein so intelligent. In his lecture at Einstein's memorial,
 nuclear physicist Robert Oppenheimer summarized his impression of him
-as a person:[46]
+as a person:
 
 "He was almost wholly without sophistication and wholly without
 worldliness . . . There was always with him a wonderful purity at once
@@ -393,10 +392,10 @@ childlike and profoundly stubborn."
 Scientific career
 
 Throughout his life, Einstein published hundreds of books and
-articles.[5][7] In addition to the work he did by himself he also
+articles. In addition to the work he did by himself he also
 collaborated with other scientists on additional projects including
 the Bose–Einstein statistics, the Einstein refrigerator and
-others.[58]
+others.
 
 Annus Mirabilis papers
 
@@ -439,7 +438,7 @@ humans and in the cosmos).
 
 Thermodynamic fluctuations and statistical physics
 
-Albert Einstein's first paper[59] submitted in 1900 to Annalen der
+Albert Einstein's first paper submitted in 1900 to Annalen der
 Physik was on capillary attraction. It was published in 1901 titled
 Folgerungen aus den Capillaritätserscheinungen, which was translated
 as "Conclusions from the capillarity phenomena". Two papers he
@@ -449,7 +448,7 @@ foundation for the 1905 paper on Brownian motion. These published
 calculations (1905) showed that Brownian movement can be construed as
 firm evidence that molecules exist. His research in 1903 and 1904 was
 mainly concerned with the effect of finite atomic size on diffusion
-phenomena.[59]
+phenomena.
 
 General principles postulated by Einstein
 
@@ -473,16 +472,16 @@ Consequences of this include the time-space frame of a moving body
 slowing down and contracting (in the direction of motion) relative to
 the frame of the observer. This paper also argued that the idea of a
 luminiferous aether – one of the leading theoretical entities in
-physics at the time – was superfluous.[60]
+physics at the time – was superfluous.
 
 In his paper on mass–energy equivalence Einstein produced E = mc2 from
-his special relativity equations.[61] Einstein's 1905 work on
+his special relativity equations. Einstein's 1905 work on
 relativity remained controversial for many years, but was accepted by
-leading physicists, starting with Max Planck.[62][63]
+leading physicists, starting with Max Planck.
 
 Photons and energy quanta
 
-In a 1905 paper,[64] Einstein postulated that light itself consists of
+In a 1905 paper, Einstein postulated that light itself consists of
 localized particles (quanta). Einstein's light quanta were nearly
 universally rejected by all physicists, including Max Planck and Niels
 Bohr. This idea only became universally accepted in 1919, with Robert
@@ -494,7 +493,7 @@ collection of photons with energy hf each, where h is Planck's
 constant. He does not say much more, because he is not sure how the
 particles are related to the wave. But he does suggest that this idea
 would explain certain experimental results, notably the photoelectric
-effect.[65]
+effect.
 
 Quantized atomic vibrations
 
@@ -506,7 +505,7 @@ aware that getting the frequency of the actual oscillations would be
 different, but he nevertheless proposed this theory because it was a
 particularly clear demonstration that quantum mechanics could solve
 the specific heat problem in classical mechanics. Peter Debye refined
-this model.[66]
+this model.
 
 Adiabatic principle and action-angle variables
 
@@ -527,13 +526,13 @@ quantized in any mechanical motion must be an adiabatic
 invariant. Arnold Sommerfeld identified this adiabatic invariant as
 the action variable of classical mechanics. The law that the action
 variable is quantized was a basic principle of the quantum theory as
-it was known between 1900 and 1925.[citation needed]
+it was known between 1900 and 1925.
 
 Wave–particle duality
 
 Although the patent office promoted Einstein to Technical Examiner
 Second Class in 1906, he had not given up on academia. In 1908, he
-became a privatdozent at the University of Bern.[67] In "über die
+became a privatdozent at the University of Bern. In "über die
 Entwicklung unserer Anschauungen über das Wesen und die Konstitution
 der Strahlung" ("The Development of Our Views on the Composition and
 Essence of Radiation"), on the quantization of light, and in an
@@ -555,7 +554,7 @@ fluctuations. The effect of density fluctuations is that light of all
 wavelengths is scattered, making the fluid look milky white. Einstein
 relates this to Raleigh scattering, which is what happens when the
 fluctuation size is much smaller than the wavelength, and which
-explains why the sky is blue.[68] Einstein quantitatively derived
+explains why the sky is blue. Einstein quantitatively derived
 critical opalescence from a treatment of density fluctuations, and
 demonstrated how both the effect and Rayleigh scattering originate
 from the atomistic constitution of matter.
@@ -587,7 +586,7 @@ As Albert Einstein later said, the reason for the development of
 general relativity was that the preference of inertial motions within
 special relativity was unsatisfactory, while a theory which from the
 outset prefers no state of motion (even accelerated ones) should
-appear more satisfactory.[69] So in 1908 he published an article on
+appear more satisfactory. So in 1908 he published an article on
 acceleration under special relativity. In that article, he argued that
 free fall is really inertial motion, and that for a freefalling
 observer the rules of special relativity must apply. This argument is
@@ -612,7 +611,7 @@ with the equations of motion supplemented by additional gauge fixing
 conditions. Simultaneously less elegant and more difficult than
 general relativity, after more than two years of intensive work
 Einstein abandoned the theory in November, 1915 after realizing that
-the hole argument was mistaken.[70]
+the hole argument was mistaken.
 
 Cosmology
 
@@ -622,7 +621,7 @@ eternal and unchanging, but this type of universe is not consistent
 with relativity. To fix this, Einstein modified the general theory by
 introducing a new notion, the cosmological constant. With a positive
 cosmological constant, the universe could be an eternal static
-sphere.[71]
+sphere.
 
 Einstein believed a spherical static universe is philosophically preferred, because it would obey Mach's principle. He had shown that general relativity incorporates Mach's principle to a certain extent in frame dragging by gravitomagnetic fields, but he knew that Mach's idea would not work if space goes on forever. In a closed universe, he believed that Mach's principle would hold. Mach's principle has generated much controversy over the years.
 
@@ -631,7 +630,7 @@ Modern quantum theory
 In 1917, at the height of his work on relativity, Einstein published
 an article in Physikalische Zeitschrift that proposed the possibility
 of stimulated emission, the physical process that makes possible the
-maser and the laser.[72] This article showed that the statistics of
+maser and the laser. This article showed that the statistics of
 absorption and emission of light would only be consistent with
 Planck's distribution law if the emission of light into a mode with n
 photons would be enhanced statistically compared to the emission of
@@ -654,14 +653,14 @@ as well as to the proposed light particles, and submitted his
 translation of Bose's paper to the Zeitschrift für Physik. Einstein
 also published his own articles describing the model and its
 implications, among them the Bose–Einstein condensate phenomenon that
-some particulates should appear at very low temperatures.[73] It was
+some particulates should appear at very low temperatures. It was
 not until 1995 that the first such condensate was produced
 experimentally by Eric Allin Cornell and Carl Wieman using
 ultra-cooling equipment built at the NIST–JILA laboratory at the
-University of Colorado at Boulder.[74] Bose–Einstein statistics are
+University of Colorado at Boulder. Bose–Einstein statistics are
 now used to describe the behaviors of any assembly of
 bosons. Einstein's sketches for this project may be seen in the
-Einstein Archive in the library of the Leiden University.[58]
+Einstein Archive in the library of the Leiden University.
 
 Energy momentum pseudotensor
 
@@ -690,7 +689,7 @@ Following his research on general relativity, Einstein entered into a
 series of attempts to generalize his geometric theory of gravitation
 to include electromagnetism as another aspect of a single entity. In
 1950, he described his "unified field theory" in a Scientific American
-article entitled "On the Generalized Theory of Gravitation".[75]
+article entitled "On the Generalized Theory of Gravitation".
 Although he continued to be lauded for his work, Einstein became
 increasingly isolated in his research, and his efforts were ultimately
 unsuccessful. In his pursuit of a unification of the fundamental
@@ -777,28 +776,28 @@ will be the number of particles in it.
 
 This formulation is a form of second quantization, but it predates
 modern quantum mechanics. Erwin Schrödinger applied this to derive the
-thermodynamic properties of a semiclassical[disambiguation needed]
-ideal gas. Schrödinger urged Einstein to add his name as co-author,
-although Einstein declined the invitation.[76]
+thermodynamic properties of a semiclassical ideal gas. Schrödinger
+urged Einstein to add his name as co-author, although Einstein
+declined the invitation.
 
 Einstein refrigerator
 
 In 1926, Einstein and his former student Leó Szilárd co-invented (and
 in 1930, patented) the Einstein refrigerator. This absorption
 refrigerator was then revolutionary for having no moving parts and
-using only heat as an input.[77] On 11 November 1930, U.S. Patent
+using only heat as an input. On 11 November 1930, U.S. Patent
 1,781,541 was awarded to Albert Einstein and Leó Szilárd for the
 refrigerator. Their invention was not immediately put into commercial
 production, as the most promising of their patents were quickly bought
 up by the Swedish company Electrolux to protect its refrigeration
-technology from competition.[78]
+technology from competition.
 
 Bohr versus Einstein
 
 The Bohr–Einstein debates were a series of public disputes about
 quantum mechanics between Albert Einstein and Niels Bohr who were two
 of its founders. Their debates are remembered because of their
-importance to the philosophy of science.[79][80][81]
+importance to the philosophy of science.
 
 Einstein–Podolsky–Rosen paradox
 
@@ -847,14 +846,14 @@ stepdaughters Margot and Ilse. The letters were included in the papers
 bequeathed to The Hebrew University. Margot Einstein permitted the
 personal letters to be made available to the public, but requested
 that it not be done until twenty years after her death (she died in
-1986[82]). Barbara Wolff, of The Hebrew University's Albert Einstein
+1986). Barbara Wolff, of The Hebrew University's Albert Einstein
 Archives, told the BBC that there are about 3,500 pages of private
-correspondence written between 1912 and 1955.[83]
+correspondence written between 1912 and 1955.
 
 Einstein bequeathed the royalties from use of his image to The Hebrew
 University of Jerusalem. Corbis, successor to The Roger Richman
 Agency, licenses the use of his name and associated imagery, as agent
-for the university.[84][85]
+for the university.
 
 In popular culture
 
@@ -862,14 +861,14 @@ In the period before World War II, Einstein was so well-known in
 America that he would be stopped on the street by people wanting him
 to explain "that theory". He finally figured out a way to handle the
 incessant inquiries. He told his inquirers "Pardon me, sorry! Always I
-am mistaken for Professor Einstein."[86]
+am mistaken for Professor Einstein."
 
 Einstein has been the subject of or inspiration for many novels,
-films, plays, and works of music.[87] He is a favorite model for
+films, plays, and works of music. He is a favorite model for
 depictions of mad scientists and absent-minded professors; his
 expressive face and distinctive hairstyle have been widely copied and
 exaggerated. TIME magazine's Frederic Golden wrote that Einstein was
-"a cartoonist's dream come true".[88]
+"a cartoonist's dream come true".
 
 Awards and honors
 
