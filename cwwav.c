@@ -98,7 +98,7 @@ static const struct morse_code morse_table[] =
   { 5, 0x1c },  // 56: 8: ---..
   { 5, 0x1e },  // 57: 9: ----.
   { 6, 8 },     // 58: :: ---...
-  { 0, 0 },     // 59: ;
+  { 6, 12 },     // 59: ;: -.-.-.
   { 0, 0 },     // 60: <
   { 5, 0x11 },  // 61: =: -...-
   { 0, 0 },     // 62: >
@@ -130,6 +130,11 @@ static const struct morse_code morse_table[] =
   { 4, 0x09 },  // 88: x: -..-
   { 4, 0x0b },  // 89: y: -.--
   { 4, 0x0c },  // 90: z: --..
+  { 0, 0 },     // 91: [
+  { 0, 0 },     // 92: backslash
+  { 0, 0 },     // 93: ]
+  { 0, 0 },     // 94: ^
+  { 6, 13 },    // 95: _: : ..__._
 };
 
 static const uint8_t morse_extended_table[] =
@@ -146,6 +151,8 @@ static const uint8_t morse_extended_table[] =
   0x0c, /* ?: ..--.. */
   0x1a, /* @: .--.-. */
   0x05, /* % (SK): ...-.- */
+  0x2a, /* ;: -.-.-. */
+  0x0d, /* _: ..__._ */
 };
 
 
@@ -222,7 +229,7 @@ void send_char(int ch)
 {
 	int c,len,code;
 	ch = toupper(ch);
-	if (ch > 90)
+	if (ch > 95)
 		return;
 	len = morse_table[ch].len;
 	if (len == 0)
