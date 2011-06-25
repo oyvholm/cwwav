@@ -61,7 +61,7 @@ char *outfname = NULL;
 /* Set before calling init */
 double wpm = 25.0;
 double farnsworth_wpm = 0.0;
-int frequency = 750;
+int frequency = 650;
 int stereo = 0;
 double envelope = 5.0;
 int samplerate;
@@ -445,7 +445,7 @@ int main(int argc, char *argv[]) {
 
 	output_format = FORMAT_WAV;
 	samplerate = 16000;
-	frequency = 750;
+	frequency = 650;
 	wpm = 25;
 	envelope = 5.0; /* ms */
 
@@ -473,7 +473,7 @@ int main(int argc, char *argv[]) {
 			envelope = atof(optarg);
 			break;
 		case 'w':
-			wpm = atoi(optarg);
+			wpm = atof(optarg);
 			break;
 		case 'O':
 			if (!strcmp(optarg, "wav")) {
