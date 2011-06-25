@@ -22,8 +22,9 @@ What and why
 ============
 
 This program takes one or more text files (or text read from standard
-input) and converts it into a WAV (audio) file containing CW (Morse
-code).
+input) and converts it into a WAV (audio), or, if you have the "LAME"
+MP3 encoder library installed, optionally an MP3 file containing CW
+(Morse code).
 
 It's useful for generating practice files if you are learning CW and
 want to practice by listening to text on your iPod, phone, laptop or
@@ -51,6 +52,15 @@ Then compile the program:
 
   $ make
 
+If you want to enable the built-in MP3 encoder support, you need to
+install the LAME development files and append "LAME=1" to the make
+command. For Ubuntu, you do it like this - but it only works if you
+have "Universe" ticked under Software Center->Edit->Software Sources.
+
+  $ sudo apt-get install libmp3lame-dev
+  $ make clean   (to remove the previous copy without MP3 support)
+  $ make LAME=1
+
 If that works out, you can run it directly from the current directory, or
 install it system-wide by doing:
 
@@ -61,28 +71,36 @@ How to use
 ==========
 
 Usage: cwwav OPTIONS [FILENAME...]
-Convert text into a WAV file with morse code.
+Convert text into an audio file with morse code.
 
 Mandatory arguments to long options are mandatory for short options too.
-  -s, --stereo       generate stereo output (two identical channels)
-  -o, --output       specify output file (must be supplied)
-  -f, --frequency=N  use sidetone frequency N Hz (default: 750)
-  -r, --rate=N       sample rate N (default 44100)
-  -w, --wpm=N        use N words per minute (default: 25)
-  -e, --envelope=N   envelope N ms at start/end of each tone (default=10)
-  -h, --help         display this help and exit
+  -s, --stereo        generate stereo output (two identical channels)
+  -o, --output        specify output file (must be supplied for WAV output)
+  -O, --output-format specify output file format (wav or mp3, default: wav)
+  -f, --frequency=N   use sidetone frequency N Hz (default: 750)
+  -r, --rate=N        sample rate N (default 16000)
+  -w, --wpm=N         use N words per minute (default: 25)
+  -e, --envelope=N    envelope N ms at start/end of each tone (default=10)
+  -h, --help          display this help and exit
 
 Example
 =======
 
-I took the "printable" version of the James Clerk Maxwell article on
-Wikipedia and covnerted into text (examples/maxwell.txt).
+1. I took the "printable" version of the James Clerk Maxwell article
+on Wikipedia and covnerted into text (examples/maxwell.txt).
+
+2a. New method: Convert it directly to an MP3 file:
+
+ $ ./cwwav --output maxwell.mp3 --frequency=650 --wpm=20 examples/maxwell.txt
+
+2b. Old method, or if you don't have the LAME library installed:
 
 Then I converted it to a 20-WPM CW file like this:
 
  $ ./cwwav --output maxwell.wav --frequency=650 --rate=16000 --wpm=20 examples/maxwell.txt
 
-Then I converted the resulting WAV file into an MP3 file using lame:
+4. Then I converted the resulting WAV file into an MP3 file using
+lame:
 
  $ lame --preset phone maxwell.wav maxwell.mp3
 
@@ -97,7 +115,18 @@ email address is thomas@ at horsten dot com.
 Releases
 ========
 
+0.2.1 - First release with MP3 support
+
 0.1 - First public alpha
+
+
+TODO
+====
+
+Still a lot to be done, but it works for me :) So it might take some
+time to add more features. If you have anything specific you want I
+will probably be able to help, just email me!
+
 
 Homepage
 ========
