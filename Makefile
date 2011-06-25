@@ -1,6 +1,16 @@
 CC=gcc
-CFLAGS=-ggdb
-LDFLAGS=-lm -lsndfile -lmp3lame -ggdb
+CFLAGS=
+LDFLAGS=-lm -lsndfile
+
+ifeq ($(LAME),1)
+  LDFLAGS+=-lmp3lame
+  CFLAGS+=-DHAVE_LAME=1
+endif
+
+ifeq ($(DEBUG),1)
+  LDFLAGS+=-ggdb
+  CFLAGS+=-ggdb
+endif
 
 all: cwwav
 
