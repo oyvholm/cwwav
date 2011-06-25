@@ -17,6 +17,8 @@
  *
 */
 
+#define HAVE_LAME 1
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -24,6 +26,14 @@
 #include <sndfile.h>
 #include <math.h>
 #include <getopt.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <errno.h>
+#ifdef HAVE_LAME
+#include <lame/lame.h>
+#endif
 
 #if 0
 #define dprintf(args...) fprintf(stderr, args)
@@ -41,20 +51,34 @@ struct waveform dah;
 struct waveform gap;
 
 static SNDFILE *sf;
+int outfd;
+#ifdef HAVE_LAME
+static lame_global_flags *lame_flags;
+static char *mp3buf;
+static int mp3buf_size;
+#endif
 
 char *outfname = NULL;
 
 /* Set before calling init */
-int wpm = 25;
+double wpm = 25.0;
+double farnsworth_wpm = 0.0;
 int frequency = 750;
 int stereo = 0;
 double envelope = 5.0;
+int samplerate;
 
 /* Set by init() */
-int samplerate;
-int ms_per_dit;
+double ms_per_dit;
 
 const double pi = 3.14159265358979323844;
+
+enum {
+	FORMAT_WAV = 1,
+#ifdef HAVE_LAME
+	FORMAT_MP3 = 2,
+#endif
+} output_format;
 
 struct morse_code {
 	uint8_t len:3;
@@ -159,16 +183,16 @@ static const uint8_t morse_extended_table[] =
 void init()
 {
 	int c;
-	ms_per_dit = 1200/wpm;
-	if (ms_per_dit < 2)
-		ms_per_dit = 2;
-	dit.length = ceil((samplerate/1000.0)*(double)ms_per_dit);
-	dit.samples = malloc(dit.length * sizeof(dit.samples[0]) * (stereo ? 2 : 1));
+	ms_per_dit = 1200.0/wpm;
+	if (ms_per_dit < 2.0)
+		ms_per_dit = 2.0;
+	dit.length = ceil((samplerate/1000.0)*ms_per_dit);
+	dit.samples = malloc(dit.length * sizeof(dit.samples[0]) * (stereo && output_format==FORMAT_WAV ? 2 : 1));
 	dah.length = dit.length * 3;
-	dah.samples = malloc(dah.length * sizeof(dah.samples[0]) * (stereo ? 2 : 1));
+	dah.samples = malloc(dah.length * sizeof(dah.samples[0]) * (stereo && output_format==FORMAT_WAV ? 2 : 1));
 	gap.length = dit.length;
-	gap.samples = malloc(gap.length * sizeof(gap.samples[0]) * (stereo ? 2 : 1));
-	dprintf("ms/samples per dit: %d/%d dah: %d/%d\n", ms_per_dit, dit.length, 3*ms_per_dit, dah.length);
+	gap.samples = malloc(gap.length * sizeof(gap.samples[0]) * (stereo && output_format==FORMAT_WAV ? 2 : 1));
+	dprintf("ms/samples per dit: %f/%d dah: %f/%d\n", ms_per_dit, dit.length, 3*ms_per_dit, dah.length);
 	if (dit.samples == NULL || dah.samples == NULL || gap.samples == NULL) {
 		fprintf(stderr, "Error allocating buffer\n");
 		exit(1);
@@ -200,7 +224,7 @@ void init()
 	}
 #endif
 #if 1
-	if (stereo) {
+	if (stereo && output_format==FORMAT_WAV) {
 		for (c=2*dit.length-3; c>=0; c-=2) {
 			dit.samples[c] = dit.samples[c+1] = dit.samples[c/2];
 		}
@@ -213,8 +237,31 @@ void init()
 
 void output(struct waveform *v)
 {
+	int r;
 	dprintf("Output %s\n", v==&gap?"gap":v==&dit?"dit":v==&dah?"dah":"???");
-	sf_writef_short(sf, v->samples, v->length);
+	if (output_format == FORMAT_WAV) {
+		sf_writef_short(sf, v->samples, v->length);
+	}
+#ifdef HAVE_LAME
+	else if (output_format == FORMAT_MP3) {
+		r = lame_encode_buffer(lame_flags,
+				       v->samples,
+				       stereo ? v->samples : NULL,
+				       v->length,
+				       mp3buf,
+				       mp3buf_size);
+		if (r < 0) {
+			fprintf(stderr, "LAME encoding error: %d\n", r);
+			exit(1);
+		} else  if (r > 0) {
+			r = write(outfd, mp3buf, r);
+			if (r < 0) {
+				fprintf(stderr, "Write failed: %s\n", strerror(errno));
+				exit(1);
+			}
+		}
+	}
+#endif
 }
 
 void send_space(int len)
@@ -247,28 +294,84 @@ void send_char(int ch)
 
 void close_output()
 {
-	if (sf)
-		sf_close(sf);
+	if (output_format == FORMAT_WAV) {
+		if (sf) {
+			sf_close(sf);
+		}
+	}
+#ifdef HAVE_LAME
+	else if (output_format == FORMAT_MP3) {
+		int r;
+		r = lame_encode_flush(lame_flags, mp3buf, mp3buf_size);
+		if (r < 0) {
+			fprintf(stderr, "LAME encoding error: %d\n", r);
+			exit(1);
+		} else  if (r > 0) {
+			r = write(outfd, mp3buf, r);
+			if (r < 0) {
+				fprintf(stderr, "Write failed: %s\n", strerror(errno));
+				exit(1);
+			}
+		}
+		free(mp3buf);
+		mp3buf = NULL;
+		mp3buf_size = 0;
+	}
+#endif
 }
 
 void setup_output()
 {
-	struct SF_INFO i;
-	memset(&i, 0, sizeof(i));
-	i.samplerate = samplerate;
-	i.channels = stereo ? 2 : 1;
-	i.format = SF_FORMAT_WAV | SF_FORMAT_PCM_16;
-	if (outfname) {
-		sf = sf_open(outfname, SFM_WRITE, &i);
-	} else {
-		sf = sf_open_fd(1, SFM_WRITE, &i, 0);
+	if (output_format == FORMAT_WAV) {
+		struct SF_INFO i;
+		memset(&i, 0, sizeof(i));
+		i.samplerate = samplerate;
+		i.channels = stereo ? 2 : 1;
+		i.format = SF_FORMAT_WAV | SF_FORMAT_PCM_16;
+		if (outfname) {
+			sf = sf_open(outfname, SFM_WRITE, &i);
+		} else {
+			sf = sf_open_fd(1, SFM_WRITE, &i, 0);
+		}
+		if (!sf) {
+			fprintf(stderr, "sndfile open failed: %s\n", sf_strerror(NULL));
+			exit(1);
+		}
 	}
-	if (!sf) {
-		fprintf(stderr, "sndfile open failed: %s\n", sf_strerror(NULL));
-		exit(1);
+#ifdef HAVE_LAME
+	else if (output_format == FORMAT_MP3) {
+		if (outfname && strcmp(outfname, "-")) {
+			outfd = open(outfname, O_WRONLY | O_CREAT | O_TRUNC, 0666);
+			if (outfd < 1) {
+				fprintf(stderr, "Open output failed: %s\n", strerror(errno));
+				exit(1);
+			}
+		} else {
+			outfd = 1;
+		}
+		lame_flags = lame_init();
+		if (!lame_flags) {
+			fprintf(stderr, "LAME init failed\n");
+			exit(1);
+		}
+		lame_set_in_samplerate(lame_flags, samplerate);
+		lame_set_num_channels(lame_flags, stereo ? 2 : 1);
+		lame_set_mode(lame_flags, stereo ? JOINT_STEREO : MONO);
+		lame_set_quality(lame_flags, 5);
+		lame_set_VBR(lame_flags, vbr_abr);
+		lame_set_preset(lame_flags, 16); /* ABR 16, same as "phone" preset */
+		if ( 0 > lame_init_params(lame_flags)) {
+			fprintf(stderr, "LAME init params failed\n");
+		}
+		mp3buf_size = (int)ceil(1.25*dit.length*(stereo ? 2 : 1)) + 7200;
+		mp3buf = malloc(mp3buf_size);
+		if (!mp3buf) {
+			fprintf(stderr, "Failed to allocate mp3 buffer\n");
+			exit(1);
+		}
 	}
+#endif
 }
-
 int text_to_morse(FILE *f) {
 	int space = 0;
 	int nl = 0;
@@ -308,16 +411,21 @@ int text_to_morse(FILE *f) {
 void print_help(const char *progname)
 {
 	printf("Usage: %s OPTIONS [FILENAME...]\n"
-	       "Convert text into a WAV file with morse code.\n"
+	       "Convert text into an audio file with morse code.\n"
 	       "\n"
 	       "Mandatory arguments to long options are mandatory for short options too.\n"
-	       "  -s, --stereo       generate stereo output (two identical channels)\n"
-	       "  -o, --output       specify output file (must be supplied)\n"
-	       "  -f, --frequency=N  use sidetone frequency N Hz (default: 750)\n"
-	       "  -r, --rate=N       sample rate N (default 44100)\n"
-	       "  -w, --wpm=N        use N words per minute (default: 25)\n"
-	       "  -e, --envelope=N   envelope N ms at start/end of each tone (default=10)\n"
-	       "  -h, --help         display this help and exit\n", progname);
+	       "  -s, --stereo        generate stereo output (two identical channels)\n"
+	       "  -o, --output        specify output file (must be supplied for WAV output)\n"
+#ifdef HAVE_LAME
+	       "  -O, --output-format specify output file format (wav or mp3, default: wav)\n"
+#else
+	       "  -O, --output-format specify output file format (wav, default: wav)\n"
+#endif
+	       "  -f, --frequency=N   use sidetone frequency N Hz (default: 750)\n"
+	       "  -r, --rate=N        sample rate N (default 16000)\n"
+	       "  -w, --wpm=N         use N words per minute (default: 25)\n"
+	       "  -e, --envelope=N    envelope N ms at start/end of each tone (default=10)\n"
+	       "  -h, --help          display this help and exit\n", progname);
 }
 
 int main(int argc, char *argv[]) {
@@ -331,18 +439,20 @@ int main(int argc, char *argv[]) {
 			{ "stereo", no_argument, 0, 's' },
 			{ "rate", required_argument, 0, 'r' },
 			{ "output", required_argument, 0, 'o' },
+			{ "output-format", required_argument, 0, 'O' },
 			{ "frequency", required_argument, 0, 'f' },
 			{ "wpm", required_argument, 0, 'w' },
 			{ "envelope", required_argument, 0, 'e' },
 			{0, 0, 0, 0} };
 
-	samplerate = 44100;
+	output_format = FORMAT_WAV;
+	samplerate = 16000;
 	frequency = 750;
 	wpm = 25;
 	envelope = 5.0; /* ms */
 
 	while (1) {
-		int c = getopt_long(argc, argv, "hsr:o:f:w:e:", long_options,
+		int c = getopt_long(argc, argv, "hsr:o:O:f:w:e:", long_options,
 			&option_index);
 		if (c == -1)
 			break;
@@ -367,6 +477,23 @@ int main(int argc, char *argv[]) {
 		case 'w':
 			wpm = atoi(optarg);
 			break;
+		case 'O':
+			if (!strcmp(optarg, "wav")) {
+				output_format = FORMAT_WAV;
+#ifdef HAVE_LAME
+			} else if (!strcmp(optarg, "mp3")) {
+				output_format = FORMAT_MP3;
+#endif
+			} else {
+				fprintf(stderr, "Unknown output format specified, supported formats: ");
+#ifdef HAVE_LAME
+				fprintf(stderr, "wav, mp3\n");
+#else
+				fprintf(stderr, "wav\n");
+#endif
+				exit(1);
+			}
+			break;
 		case '?':
 			/* getopt_long printed the error message */
 			exit(1);
@@ -376,8 +503,11 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
-	if (!outfname) {
-		fprintf(stderr, "Error: Must specify output file with --output (try --help)\n");
+	if (wpm < 1.0)
+		wpm = 1.0;
+
+	if (output_format == FORMAT_WAV && (!outfname || !strcmp(outfname, "-"))) {
+		fprintf(stderr, "Error: Cannot write WAV format to standard output, specify output file with\nthe --output option or use another format (try --help)\n");
 		exit(1);
 	}
 

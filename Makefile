@@ -1,8 +1,6 @@
 CC=gcc
-#CFLAGS=-ggdb
-#LDFLAGS=-lm -lsndfile -ggdb
 CFLAGS=-ggdb
-LDFLAGS=-lm -lsndfile -ggdb
+LDFLAGS=-lm -lsndfile -lmp3lame -ggdb
 
 all: cwwav
 
