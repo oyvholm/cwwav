@@ -200,10 +200,10 @@ void init()
 	       frequency, samples_per_cycle);
 	/* Fill in the raw sine wave */
 	for (c=0; c<dit.length; c++) {
-		dit.samples[c] = 16383 * sin((c/samples_per_cycle) * pi * 2.0);
+		dit.samples[c] = 32767 * sin((c/samples_per_cycle) * pi * 2.0);
 	}
 	for (c=0; c<dah.length; c++) {
-		dah.samples[c] = 16383 * sin((c/samples_per_cycle) * pi * 2.0);
+		dah.samples[c] = 32767 * sin((c/samples_per_cycle) * pi * 2.0);
 	}
 	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0])*stereo?2:1);
 	/* Apply envelope, 5ms sine hold rise and fall */
