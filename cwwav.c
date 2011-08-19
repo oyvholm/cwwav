@@ -358,6 +358,7 @@ void setup_output()
 		lame_set_quality(lame_flags, 5);
 		lame_set_VBR(lame_flags, vbr_abr);
 		lame_set_preset(lame_flags, 16); /* ABR 16, same as "phone" preset */
+		lame_set_bWriteVbrTag(lame_flags, 1);
 		if ( 0 > lame_init_params(lame_flags)) {
 			fprintf(stderr, "LAME init params failed\n");
 		}
