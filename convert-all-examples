@@ -1,0 +1,16 @@
+#!/bin/sh
+
+SPEEDS="25 28 30 35 40"
+
+doit() {
+  echo "FILE: $2 NAME: $3 SPEED: $1"
+  rm -f ./tmp.wav
+  ./cwwav -O wav -e 18 -f 650 -w $1 -o ./tmp.wav examples/$2.txt
+  lame --preset cbr 16 --tt "$3 $1 WPM" --ta "Wikipedia" --tl "CW Practice $1 WPM" ./tmp.wav "o/$3-$1.mp3"
+}
+
+for a in $SPEEDS; do
+  doit $a caesar Caesar
+  doit $a maxwell Maxwell
+  doit $a einstein Einstein
+done
