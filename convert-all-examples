@@ -13,5 +13,6 @@ for a in $SPEEDS; do
   doit $a caesar Caesar
   doit $a maxwell Maxwell
   doit $a einstein Einstein
+  doit $a newton Newton
   doit $a tesla Tesla
 done
