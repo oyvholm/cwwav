@@ -1,0 +1,872 @@
+Nikola Tesla
+
+From Wikipedia, the free encyclopedia
+
+Nikola Tesla (10 July 1856 - 7 January 1943) was an inventor,
+mechanical engineer, and electrical engineer. He was an important
+contributor to the birth of commercial electricity, and is best known
+for his many revolutionary developments in the field of
+electromagnetism in the late 19th and early 20th centuries. Tesla's
+patents and theoretical work formed the basis of modern alternating
+current (AC) electric power systems, including the polyphase system of
+electrical distribution and the AC motor. This work helped usher in
+the Second Industrial Revolution.
+
+Born an ethnic Serb in the village of Smiljan (now part of Gospic), in
+the Croatian Military Frontier of the Austrian Empire (modern-day
+Croatia), Tesla was a subject of the Austrian Empire by birth and
+later became an American citizen. Because of his 1894 demonstration of
+wireless communication through radio and as the eventual victor in the
+"War of Currents", he was widely respected as one of the greatest
+electrical engineers who worked in America. He pioneered modern
+electrical engineering and many of his discoveries were of
+groundbreaking importance. In the United States during this time,
+Tesla's fame rivaled that of any other inventor or scientist in
+history or popular culture. Tesla demonstrated wireless energy
+transfer to power electronic devices as early as 1893, and aspired to
+intercontinental wireless transmission of industrial power in his
+unfinished Wardenclyffe Tower project.
+
+Because of his eccentric personality and his seemingly unbelievable
+and sometimes bizarre claims about possible scientific and
+technological developments, Tesla was ultimately ostracized and
+regarded as a mad scientist by many late in his life. Tesla died with
+little money at the age of 86 in a hotel suite in New York City.
+
+The SI unit measuring magnetic field B (also referred to as the
+magnetic flux density and magnetic induction), the tesla, was named in
+his honor (at the CGPM, Paris, 1960).
+
+Early years
+
+Tesla was born to Serbian parents in the village of Smiljan, Austrian
+Empire near the town of Gospic, in the territory of modern-day
+Croatia. His baptismal certificate reports that he was born on 28 June
+(N.S. 10 July), 1856, to Father Milutin Tesla, a priest in the Serbian
+Orthodox Church. His paternal origin is thought to be either of one of
+the local Serb clans in the Tara valley or from the Herzegovinian
+noble Pavle Orlovic. His mother, Duka, daughter of a Serbian Orthodox
+Church priest, came from a family domiciled in Lika and Banija, but
+with deeper origins to Kosovo. She was talented in making home craft
+tools and memorized many Serbian epic poems, but never learned to
+read.
+
+Nikola was the fourth of five children, having one older brother
+(Dane, who was killed in a horse-riding accident when Nikola was five)
+and three sisters (Milka, Angelina and Marica). His family moved to
+Gospic in 1862. Tesla attended school at Higher Real Gymnasium in
+Karlovac. He finished a four-year term in the span of three years.
+
+Tesla went on to study electrical engineering at the Austrian
+Polytechnic in Graz (1875). While there, he studied the uses of
+alternating current. Some sources say he received Baccalaureate
+degrees from the university at Graz. However, the university says that
+he did not receive a degree and did not continue beyond the first
+semester of his third year, during which he stopped attending
+lectures. In December 1878, Tesla left Graz and broke all relations
+with his family. His friends thought that he had drowned in the Mur
+River. He went to Marburg, (today's Maribor, in Slovenia), where he
+was first employed as an assistant engineer for a year. He suffered a
+nervous breakdown during this time. Tesla was later persuaded by his
+father to attend the Charles-Ferdinand University in Prague, which he
+attended for the summer term of 1880. Here, he was influenced by Ernst
+Mach. However, after his father died, he left the university, having
+completed only one term.
+
+Tesla engaged in reading many works, memorizing complete books,
+supposedly having a photographic memory. Tesla related in his
+autobiography that he experienced detailed moments of
+inspiration. During his early life, Tesla was stricken with illness
+time and time again. He suffered a peculiar affliction in which
+blinding flashes of light would appear before his eyes, often
+accompanied by visions. Much of the time the visions were linked to a
+word or idea he might have come across, at other times they would
+provide the solution to a particular problem he had been encountering;
+just by hearing the name of an item, he would be able to envision it
+in realistic detail. Modern-day synesthetes report similar
+symptoms. Tesla would visualize an invention in his mind with extreme
+precision, including all dimensions, before moving to the construction
+stage; a technique sometimes known as picture thinking. He typically
+did not make drawings by hand, instead just conceiving all ideas with
+his mind. Tesla also often had flashbacks to events that had happened
+previously in his life; these began during his childhood.
+
+In 1880, he moved to Budapest to work under Tivadar Puskas in a
+telegraph company, the National Telephone Company. There, he met
+Nebojsa Petrovic, a young, Serbian inventor who lived in
+Austria. Although their encounter was brief, they did work on a
+project together using twin turbines to create continual power. On the
+opening of the telephone exchange in Budapest, 1881, Tesla became the
+chief electrician to the company, and was later engineer for the
+country's first telephone system. He also developed a device that,
+according to some, was a telephone repeater or amplifier, but
+according to others could have been the first loudspeaker.
+
+France and the United States
+
+In 1882 he moved to Paris, to work as an engineer for the Continental
+Edison Company, designing improvements to electric equipment brought
+overseas from Edison's ideas. According to his autobiography, in the
+same year he conceived the induction motor and began developing
+various devices that use rotating magnetic fields for which he
+received patents in 1888.
+
+On 6 June 1884, Tesla first arrived in the United States, in New York
+City with little besides a letter of recommendation from Charles
+Batchelor, a former employer. In the letter of recommendation to
+Thomas Edison, it is claimed that Batchelor wrote, 'I know two great
+men and you are one of them; the other is this young man', but the
+exact contents of the letter is disputed in McNichol's book. Edison
+hired Tesla to work for his Edison Machine Works. Tesla's work for
+Edison began with simple electrical engineering and quickly progressed
+to solving some of the company's most difficult problems. Tesla was
+even offered the task of completely redesigning the Edison company's
+direct current generators.
+
+Tesla claimed he was offered US$50,000 (about US$1.1 million in 2007,
+adjusted for inflation) if he redesigned Edison's inefficient motor
+and generators, making an improvement in both service and economy. In
+1885 when Tesla inquired about the payment for his work, Edison
+replied, "Tesla, you don't understand our American humor," thus
+breaking his word. Earning US$18 per week, Tesla would have had to
+work for 53 years to earn the amount he was promised. The offer was
+equal to the initial capital of the company. Tesla immediately
+resigned when he was refused a raise to US$25 per week.
+
+Tesla, in need of work, eventually found himself digging ditches for a
+short period of time for the Edison company. He used this time to
+focus on his AC polyphase system.
+
+Middle years
+
+In 1886, Tesla formed his own company, Tesla Electric Light and
+Manufacturing. The initial financial investors disagreed with Tesla on
+his plan for an alternating current motor and eventually relieved him
+of his duties at the company. Tesla worked in New York as a laborer
+from 1886 to 1887 to feed himself and raise capital for his next
+project. In 1887, he constructed the initial brushless alternating
+current induction motor, which he demonstrated to the American
+Institute of Electrical Engineers (now IEEE) in 1888. In the same
+year, he developed the principles of his Tesla coil, and began working
+with George Westinghouse at Westinghouse Electric and Manufacturing
+Company's Pittsburgh labs. Westinghouse listened to his ideas for
+polyphase systems which would allow transmission of alternating
+current electricity over long distances.
+
+In April 1887, Tesla began investigating what would later be called
+X-rays using his own single terminal vacuum tubes (similar to his
+patent number 514,170). This device differed from other early X-ray
+tubes in that it had no target electrode. The modern term for the
+phenomenon produced by this device is bremsstrahlung (or braking
+radiation). We now know that this device operated by emitting
+electrons from the single electrode through a combination of field
+electron emission and thermionic emission. Once liberated, electrons
+are strongly repelled by the high electric field near the electrode
+during negative voltage peaks from the oscillating HV output of the
+Tesla Coil, generating X rays as they collide with the glass
+envelope. He also used Geissler tubes. By 1892, Tesla became aware of
+the skin damage that Wilhelm Roentgen later identified as an effect of
+X rays.
+
+In the early research, Tesla devised several experimental setups to
+produce X-rays. Tesla held that, with his circuits, the "instrument
+will (... enable one to) generate Roentgen rays of much greater power
+than obtainable with ordinary apparatus".
+
+He also commented on the hazards of working with his circuit and
+single-node X-ray-producing devices. Of his many notes in the early
+investigation of this phenomenon, he attributed the skin damage to
+various causes. He believed early on that damage to the skin was not
+caused by the Roentgen rays, but the ozone generated in contact with
+the skin, and to a lesser extent, nitrous acid. Tesla incorrectly held
+that x-rays were longitudinal waves, such as those produced in waves
+in plasma. There are known examples of this and these plasma waves can
+occur in the situation of force-free magnetic fields. His hypotheses
+and experiments were confirmed by others.
+
+Tesla continued research in the field. He performed several
+experiments prior to Roentgen's discovery (including photographing the
+bones of his hand; later, he sent these images to Roentgen) but did
+not make his findings widely known; much of his research was lost in
+the 5th Avenue laboratory fire of March 1895.
+
+Tesla demonstrated wireless energy transmission as early as 1891. The
+Tesla effect is a term for an application of this type of electrical
+conduction (that is, the movement of energy through space and matter,
+not just the production of voltage across a conductor).
+
+American citizenship
+
+On 30 July 1891, at the age of 35, he became a naturalized citizen of
+the United States. Tesla established his South Fifth Avenue laboratory
+in New York in the same year. Later, Tesla established his Houston
+Street laboratory in New York at 46 E. Houston Street. He lit electric
+lamps wirelessly at both of the New York locations, providing evidence
+for the potential of wireless power transmission.
+
+Soon thereafter, in 1892, Tesla was awakened from a dream in which his
+mother had died. He returned to Europe for her funeral. After her
+death, Tesla fell ill. He spent two to three weeks recuperating in
+Gospic and the village of Tomingaj near Gracac, his mother's
+birthplace.
+
+Some of Tesla's closest friends were artists. He befriended Century
+Magazine editor Robert Underwood Johnson, who adapted several Serbian
+poems of Jovan Jovanovic Zmaj (which Tesla translated). Also during
+this time, Tesla was influenced by the Vedic philosophy (i.e.,
+Hinduism) teachings of the Swami Vivekananda; so much so that, after
+his exposure to Hindu-Vedic thought, Tesla started using Sanskrit
+words to name some of his fundamental concepts regarding matter and
+energy.
+
+
+Nikola Tesla's AC dynamo used to generate AC which is used to
+transport electricity across great distances. It is contained in
+U.S. Patent 390,721.  When Tesla was 36 years old, the first patents
+concerning the polyphase power system were granted. He continued
+research of the system and rotating magnetic field principles. Tesla
+served, from 1892 to 1894, as the vice president of the American
+Institute of Electrical Engineers, the forerunner (along with the
+Institute of Radio Engineers) of the modern-day IEEE. From 1893 to
+1895, he investigated high frequency alternating currents. He
+generated AC of one million volts using a conical Tesla coil and
+investigated the skin effect in conductors, designed tuned circuits,
+invented a machine for inducing sleep, cordless gas discharge lamps,
+and transmitted electromagnetic energy without wires, building the
+first radio transmitter. In St. Louis, Missouri, Tesla made a
+demonstration related to radio communication in 1893. Addressing the
+Franklin Institute in Philadelphia, Pennsylvania and the National
+Electric Light Association, he described and demonstrated in detail
+its principles. Tesla's demonstrations were written about widely
+through various media outlets. Tesla also investigated harvesting
+energy that is present throughout space. He believed that it was
+merely a question of time when men would succeed in attaching their
+machinery to the very wheelwork of nature, stating: "Ere many
+generations pass, our machinery will be driven by a power obtainable
+at any point of the universe."
+
+At the 1893 World's Fair, the World's Columbian Exposition in Chicago,
+an international exposition was held which, for the first time,
+devoted a building to electrical exhibits. It was a historic event as
+Tesla and George Westinghouse introduced visitors to AC power by using
+it to illuminate the Exposition. On display were fluorescent lamps
+developed by Westinghouse and single node bulbs. An observer noted:
+
+Within the room was suspended two hard-rubber plates covered with tin
+foil. These were about fifteen feet apart, and served as terminals of
+the wires leading from the transformers. When the current was turned
+on, the lamps or tubes, which had no wires connected to them, but lay
+on a table between the suspended plates, or which might be held in the
+hand in almost any part of the room, were made luminous. These were
+the same experiments and the same apparatus shown by Tesla in London
+about two years previous, "where they produced so much wonder and
+astonishment".  Tesla also explained the principles of the rotating
+magnetic field and induction motor by demonstrating how to make an egg
+made of copper stand on end in his demonstration of the device he
+constructed known as the "Egg of Columbus".
+
+The Tesla generator was developed by Tesla in 1895, in conjunction
+with his developments concerning the liquefaction of air. Tesla knew,
+from Lord Kelvin's discoveries, that more heat is absorbed by
+liquefied air when it is re-gasified and used to drive something, than
+is required by theory; in other words, that the liquefaction process
+is somewhat anomalous or 'over unity'. Just prior to Tesla's
+completion of his work and the filing of a patent application, Tesla's
+laboratory burned down, destroying all his equipment, models and
+inventions. Immediately after the fire, Carl von Linde, in Germany,
+filed a patent application for the same process.
+
+A "world system" for "the transmission of electrical energy without
+wires" that depends upon the electrical conductivity of the earth was
+proposed, in which transmission in various natural media with current
+that passes between the two points are used to power devices. In a
+practical wireless energy transmission system using this principle, a
+high-power ultraviolet beam might be used to form a vertical ionized
+channel in the air directly above the transmitter-receiver
+stations. The same concept is used in virtual lightning rods, the
+electrolaser electroshock weapon, and has been proposed for disabling
+vehicles.
+
+Edison
+
+Also in the late 1880s, Tesla and Thomas Edison became adversaries in
+part because of Edison's promotion of direct current (DC) for electric
+power distribution over the more efficient alternating current
+advocated by Tesla and Westinghouse. Until Tesla invented the
+induction motor, AC's advantages for long distance high voltage
+transmission were counterbalanced by the inability to operate motors
+on AC. As a result of the "War of Currents", Edison and Westinghouse
+went nearly bankrupt, so in 1897, Tesla released Westinghouse from
+contract, providing Westinghouse a break from Tesla's patent
+royalties. Also in 1897, Tesla researched radiation, which led to
+setting up the basic formulation of cosmic rays.
+
+In 1897, at age 41, Tesla filed the first radio patent (U.S. Patent
+645,576). A year later, he demonstrated a radio-controlled boat to the
+US military, believing that the military would want things such as
+radio-controlled torpedoes. Tesla claimed to have developed the "Art
+of Telautomatics", a form of robotics, as well as the technology of
+remote control. In 1898, he demonstrated a radio-controlled boat to
+the public during an electrical exhibition at Madison Square
+Garden. Tesla called his boat a "teleautomaton". In the same year,
+Tesla devised an "electric igniter" or spark plug for Internal
+combustion gasoline engines. He gained U.S. Patent 609,250,
+"Electrical Igniter for Gas Engines", on this mechanical ignition
+system. Tesla lived in the former Gerlach Hotel, renamed The Radio
+Wave building, at 49 W 27th St. (between Broadway and Sixth Avenue),
+Lower Manhattan, before the end of the century where he conducted the
+radio wave experiments. A commemorative plaque was placed on the
+building in 1977 to honor his work. Remote radio control remained a
+novelty until WWI and afterward, when a number of countries used it in
+military programs.
+
+Colorado Springs
+
+In 1899, Tesla decided to move and began research in Colorado Springs,
+Colorado in a lab located near Foote Ave. and Kiowa St., where he
+would have room for his high-voltage, high-frequency experiments. Upon
+his arrival he told reporters that he was conducting wireless
+telegraphy experiments transmitting signals from Pikes Peak to
+Paris. Tesla's diary contains explanations of his experiments
+concerning the ionosphere and the ground's telluric currents via
+transverse waves and longitudinal waves. At his lab, Tesla proved that
+the earth was a conductor, and he produced artificial lightning (with
+discharges consisting of millions of volts, and up to 135 feet
+long). Tesla also investigated atmospheric electricity, observing
+lightning signals via his receivers. Reproductions of Tesla's
+receivers and coherer circuits show an unpredicted level of complexity
+(e.g., distributed high-Q helical resonators, radio frequency
+feedback, crude heterodyne effects, and regeneration
+techniques). Tesla stated that he observed stationary waves during
+this time.
+
+Tesla researched ways to transmit power and energy wirelessly over
+long distances (via transverse waves, to a lesser extent, and, more
+readily, longitudinal waves). He transmitted extremely low frequencies
+through the ground as well as between the Earth's surface and the
+Kennelly-Heaviside layer. He received patents on wireless transceivers
+that developed standing waves by this method. In his experiments, he
+made mathematical calculations and computations based on his
+experiments and discovered that the resonant frequency of the Earth
+was approximately 8 hertz (Hz). In the 1950s, researchers confirmed
+that the resonant frequency of the Earth's ionospheric cavity was in
+this range (later named the Schumann resonance).
+
+In Colorado Springs Tesla carried out various long distance wireless
+transmission-reception experiments. Tesla effect is the application of
+a type of electrical conduction (that is, the movement of energy
+through space and matter; not just the production of voltage across a
+conductor). Through longitudinal waves, Tesla transferred energy to
+receiving devices. He sent electrostatic forces through natural media
+across a conductor situated in the changing magnetic flux and
+transferred electrical energy to a wireless receiver.
+
+In the Colorado Springs lab, Tesla observed unusual signals that he
+later thought may have been evidence of extraterrestrial radio wave
+communications coming from Venus or Mars. He noticed repetitive
+signals from his receiver which were substantially different from the
+signals he had noted from storms and earth noise. Specifically, he
+later recalled that the signals appeared in groups of one, two, three,
+and four clicks together. Tesla had mentioned that he thought his
+inventions could be used to talk with other planets. There have even
+been claims that he invented a "Teslascope" for just such a
+purpose. It is debatable what type of signals Tesla received or
+whether he picked up anything at all. Research has suggested that
+Tesla may have had a misunderstanding of the new technology he was
+working with, or that the signals Tesla observed may have been
+non-terrestrial natural radio source such as the Jovian plasma torus
+signals.
+
+Tesla left Colorado Springs on 7 January 1900. The lab was torn down
+ca. 1905 and its contents sold to pay debts. The Colorado experiments
+prepared Tesla for the establishment of the trans-Atlantic wireless
+telecommunications facility known as Wardenclyffe.
+
+Wardenclyffe years
+
+In 1900, with US$150,000 (51pct from J. Pierpont Morgan), Tesla began
+planning the Wardenclyffe Tower facility. In June 1902, Tesla's lab
+operations were moved to Wardenclyffe from Houston Street. The tower
+was dismantled for scrap during World War I. Newspapers of the time
+labeled Wardenclyffe "Tesla's million-dollar folly". In 1904, the US
+Patent Office reversed its decision and awarded Guglielmo Marconi the
+patent for radio, and Tesla began his fight to re-acquire the radio
+patent. On his 50th birthday in 1906, Tesla demonstrated his 200 hp
+(150 kW) 16,000 rpm bladeless turbine. During 1910-1911 at the
+Waterside Power Station in New York, several of his bladeless turbine
+engines were tested at 100-5000 hp.
+
+Nobel prize and Tesla
+
+Since the Nobel Prize in Physics was awarded to Marconi for radio in
+1909, Thomas Edison and Tesla were mentioned in a press dispatch as
+potential laureates to share the Nobel Prize of 1915, leading to one
+of several Nobel Prize controversies. Some sources have claimed that
+because of their animosity toward each other neither was given the
+award, despite their scientific contributions; that each sought to
+minimize the other's achievements and right to win the award; that
+both refused to ever accept the award if the other received it first;
+and that both rejected any possibility of sharing it.
+
+In the years after these rumors, neither Tesla nor Edison won the
+Prize (although Edison did receive one of 38 possible bids in 1915,
+and Tesla did receive one bid out of 38 in 1937). Earlier, Tesla alone
+was rumored to have been nominated for the Nobel Prize of 1912. The
+rumored nomination was primarily for his experiments with tuned
+circuits using high-voltage high-frequency resonant transformers.
+
+Later years
+
+In 1915, Tesla filed a lawsuit against Marconi attempting,
+unsuccessfully, to obtain a court injunction against Marconi's
+claims. After Wardenclyffe, Tesla built the Telefunken Wireless
+Station in Sayville, Long Island. Some of what he wanted to achieve at
+Wardenclyffe was accomplished with the Telefunken Wireless. In 1917,
+the facility was seized and torn down by the Marines, because it was
+suspected that it could be used by German spies.
+
+Before World War I, Tesla looked overseas for investors to fund his
+research. When the war started, Tesla lost the funding he was
+receiving from his patents in European countries. After the war ended,
+Tesla made predictions regarding the relevant issues of the post-World
+War I environment, in a printed article (20 December 1914). Tesla
+believed that the League of Nations was not a remedy for the times and
+issues. Tesla started to exhibit pronounced symptoms of
+obsessive-compulsive disorder in the years following. He became
+obsessed with the number three; he often felt compelled to walk around
+a block three times before entering a building, demanded a stack of
+three folded cloth napkins beside his plate at every meal, etc. The
+nature of OCD was little understood at the time and no treatments were
+available, so his symptoms were considered by some to be evidence of
+partial insanity, and this undoubtedly hurt what was left of his
+reputation.
+
+At this time, he was staying at The Waldorf-Astoria Hotel, renting in
+an arrangement for deferred payments. Eventually, the Wardenclyffe
+deed was turned over to George Boldt, proprietor of the
+Waldorf-Astoria, to pay a US$20,000 debt. In 1917, around the time
+that the Wardenclyffe Tower was demolished by Boldt to make the land a
+more viable real estate asset, Tesla received AIEE's highest honor,
+the Edison Medal.
+
+Tesla, in August 1917, first established principles regarding
+frequency and power level for the first primitive radar units.
+
+In 1934, Emile Girardeau, working with the first French radar systems,
+stated he was building them "according to the principles stated by
+Tesla". By the 1920s, Tesla was reportedly negotiating with the United
+Kingdom government about a ray system. Tesla had also stated that
+efforts had been made to steal the so called "death ray". It is
+suggested that the removal of the Chamberlain government ended
+negotiations.
+
+On Tesla's 75th birthday in 1931, Time magazine put him on its
+cover. The cover caption noted his contribution to electrical power
+generation. Tesla received his last patent in 1928 for an apparatus
+for aerial transportation which was the first instance of VTOL
+aircraft. By the end of 1931, Tesla released "On Future Motive Power"
+which covered an ocean thermal energy conversion system. In 1934,
+Tesla wrote to consul Jankovic of his homeland. The letter contained a
+message of gratitude to Mihajlo Pupin who had initiated a donation
+scheme by which American companies could support Tesla. Tesla refused
+the assistance, choosing instead to live on a modest pension received
+from Yugoslavia, and to continue his research.
+
+In 1936, Tesla wrote in a telegram to Vladko Macek: "I'm equally proud
+of my Serbian origin and my Croatian homeland. Long live all
+Yugoslavs."
+
+Field theories
+
+When he was 81, Tesla stated he had completed a "dynamic theory of
+gravity". He stated that it was "worked out in all details" and that
+he hoped to soon give it to the world. The theory was never published.
+
+The bulk of the theory was developed between 1892 and 1894, during the
+period that he was conducting experiments with high frequency and high
+potential electromagnetism and patenting devices for their
+use. Reminiscent of Mach's principle, Tesla stated in 1925 that:
+
+There is no thing endowed with life-from man, who is enslaving the
+elements, to the nimblest creature-in all this world that does not
+sway in its turn. Whenever action is born from force, though it be
+infinitesimal, the cosmic balance is upset and the universal motion
+results.
+
+Tesla was critical of Einstein's relativity work, calling it:
+
+...(a) magnificent mathematical garb which fascinates, dazzles and
+makes people blind to the underlying errors. The theory is like a
+beggar clothed in purple whom ignorant people take for a king ... its
+exponents are brilliant men but they are metaphysicists rather than
+scientists ...
+
+Tesla also argued:
+
+I hold that space cannot be curved, for the simple reason that it can
+have no properties. It might as well be said that God has
+properties. He has not, but only attributes and these are of our own
+making. Of properties we can only speak when dealing with matter
+filling the space. To say that in the presence of large bodies space
+becomes curved is equivalent to stating that something can act upon
+nothing. I, for one, refuse to subscribe to such a view.
+
+Tesla also believed that much of Albert Einstein's relativity theory
+had already been proposed by Ruder Boskovic, stating in an unpublished
+interview:
+
+...the relativity theory, by the way, is much older than its present
+proponents. It was advanced over 200 years ago by my illustrious
+countryman Ruder Boskovic, the great philosopher, who, notwithstanding
+other and multifold obligations, wrote a thousand volumes of excellent
+literature on a vast variety of subjects. Boskovic dealt with
+relativity, including the so-called time-space continuum ...'.
+
+Directed-energy weapon
+
+Later in life, Tesla made remarkable claims concerning a "teleforce"
+weapon. The press called it a "peace ray" or death ray. In total, the
+components and methods included:
+
+An apparatus for producing manifestations of energy in free air
+instead of in a high vacuum as in the past. This, according to Tesla
+in 1934, was accomplished.
+
+A mechanism for generating tremendous electrical force. This,
+according to Tesla, was also accomplished.
+
+A means of intensifying and amplifying the force developed by the
+second mechanism.
+
+A new method for producing a tremendous electrical repelling
+force. This would be the projector, or gun, of the invention.
+
+Tesla worked on plans for a directed-energy weapon from the early
+1900s until his death. In 1937, Tesla wrote a treatise entitled "The
+Art of Projecting Concentrated Non-dispersive Energy through the
+Natural Media", which concerned charged particle beams. Tesla
+published the document in an attempt to expound on the technical
+description of a "superweapon that would put an end to all war." This
+treatise describing the particle beam is currently in the Nikola Tesla
+Museum archive in Belgrade. It describes an open-ended vacuum tube
+with a gas jet seal that allows particles to exit, a method of
+charging particles to millions of volts, and a method of creating and
+directing nondispersive particle streams (through electrostatic
+repulsion).
+
+His records indicate that the device is based on a narrow stream of
+atomic clusters of liquid mercury or tungsten accelerated via high
+voltage (by means akin to his magnifying transformer). Tesla gives the
+following description concerning the particle gun's operation:
+
+(The nozzle would) send concentrated beams of particles through the
+free air, of such tremendous energy that they will bring down a fleet
+of 10,000 enemy airplanes at a distance of 200 miles from a defending
+nation's border and will cause armies to drop dead in their tracks.
+
+The weapon could be used against ground based infantry or for
+antiaircraft purposes. Tesla tried to interest the US War Department
+in the device. He also offered this invention to European
+countries. None of the governments purchased a contract to build the
+device. He was unable to act on his plans.
+
+Theoretical inventions
+
+Another of Tesla's theorized inventions is commonly referred to as
+Tesla's Flying Machine, which appears to resemble an ion-propelled
+aircraft. Tesla claimed that one of his life goals was to create a
+flying machine that would run without the use of an airplane engine,
+wings, ailerons, propellers, or an onboard fuel source. Initially,
+Tesla pondered about the idea of a flying craft that would fly using
+an electric motor powered by grounded base stations. As time
+progressed, Tesla suggested that perhaps such an aircraft could be run
+entirely electro-mechanically. The theorized appearance would
+typically take the form of a cigar or saucer.
+
+Personal life
+
+Nikola Tesla was a polyglot, and along with his native tongue he also
+spoke Czech, English, French, German, Hungarian, Italian, and Latin.
+
+During his second year of study at Graumltz, Tesla developed a passion
+for (and became very proficient at) billiards, chess and card-playing,
+sometimes spending more than 48 hours in a stretch at a gaming table.
+Tesla by nature required little sleep, claiming to never sleep more
+than two hours. On one occasion at his laboratory Tesla worked for a
+period of 84 hours without sleep or rest.
+
+Tesla may have suffered from obsessive-compulsive disorder, and had
+many unusual quirks and phobias. He did things in threes, and was
+adamant about staying in a hotel room with a number divisible by
+three. Tesla was physically revolted by jewelry, notably pearl
+earrings. He was fastidious about cleanliness and hygiene, and was by
+all accounts mysophobic.
+
+Tesla was obsessed with pigeons, ordering special seeds for the
+pigeons he fed in Central Park and even bringing injured ones into his
+hotel room to nurse them back to health. Tesla was an animal-lover,
+often reflecting contentedly about a childhood cat, "The Magnificent
+Macak." Tesla never married. He was celibate and claimed that his
+chastity was very helpful to his scientific abilities. Nonetheless
+there have been numerous accounts of women vying for Tesla's
+affection, even some madly in love with him. Tesla, though polite,
+behaved rather ambivalently to these women in the romantic sense.
+
+Tesla was prone to alienating himself and was generally
+soft-spoken. However, when he did engage in a social life, many people
+spoke very positively and admiringly of him. Robert Underwood Johnson
+described him as attaining a "distinguished sweetness, sincerity,
+modesty, refinement, generosity, and force." His loyal secretary,
+Dorothy Skerrit, wrote: "his genial smile and nobility of bearing
+always denoted the gentlemanly characteristics that were so ingrained
+in his soul." Tesla's friend Hawthorne wrote that "seldom did one meet
+a scientist or engineer who was also a poet, a philosopher, an
+appreciator of fine music, a linguist, and a connoisseur of food and
+drink."
+
+Nevertheless, Tesla could be harsh at times; he openly expressed his
+disgust for overweight people, once firing a secretary because of her
+weight. He was quick to criticize others' clothing as well, on several
+occasions directing a subordinate to go home and change her dress.
+
+Tesla was widely known for his great showmanship, presenting his
+innovations and demonstrations to the public as an artform, almost
+like a magician. This seems to conflict with his observed
+reclusiveness; Tesla was a complicated figure. He refused to hold
+conventions without his Tesla coil blasting electricity throughout the
+room, despite the audience often being terrified, though he assured
+them everything was perfectly safe.
+
+In middle age, Tesla became close friends with Mark Twain. They spent
+a lot of time together in his lab and elsewhere.
+
+Tesla remained bitter in the aftermath of his dispute with Edison. The
+day after Edison died the New York Times contained extensive coverage
+of Edison's life, with the only negative opinion coming from Tesla,
+who was quoted as saying:
+
+He had no hobby, cared for no sort of amusement of any kind and lived
+in utter disregard of the most elementary rules of hygiene ... His
+method was inefficient in the extreme, for an immense ground had to be
+covered to get anything at all unless blind chance intervened and, at
+first, I was almost a sorry witness of his doings, knowing that just a
+little theory and calculation would have saved him 90 percent of the
+labor. But he had a veritable contempt for book learning and
+mathematical knowledge, trusting himself entirely to his inventor's
+instinct and practical American sense.
+
+Shortly before he died, Edison said that his biggest mistake had been
+in trying to develop direct current, rather than the superior
+alternating current system that Tesla had put within his grasp.
+
+Tesla was good friends with Robert Underwood Johnson. He had amicable
+relations with Francis Marion Crawford, Stanford White, Fritz
+Lowenstein, George Scherff, and Kenneth Swezey. He ripped up a
+Westinghouse contract that would have made him the world's first
+billionaire, in part because of the implications it would have on his
+future vision of free power, and in part because it would run
+Westinghouse out of business, and Tesla had no desire to deal with the
+creditors.
+
+Tesla lived the last ten years of his life in a two-room suite on the
+33rd floor of the Hotel New Yorker, room 3327. There, near the end of
+his life, Tesla showed signs of encroaching senility, claiming to be
+visited by a specific white pigeon daily. Several biographers note
+that Tesla viewed the death of the pigeon as a "final blow" to himself
+and his work.
+
+Tesla believed that war could not be avoided until the cause for its
+recurrence was removed, but was opposed to wars in general. However,
+Tesla came to find exceptions in which he thought certain situations
+and wars were justifiable. Tesla sought to reduce distance, such as in
+communication for better understanding, transportation, and
+transmission of energy, as a means to ensure friendly international
+relations.
+
+Tesla was a life-long bachelor. Like many of his era, he became a
+proponent of a self-imposed selective breeding version of eugenics. In
+a 1937 interview, he stated:
+
+... man's new sense of pity began to interfere with the ruthless
+workings of nature. The only method compatible with our notions of
+civilization and the race is to prevent the breeding of the unfit by
+sterilization and the deliberate guidance of the mating instinct
+.... The trend of opinion among eugenists is that we must make
+marriage more difficult. Certainly no one who is not a desirable
+parent should be permitted to produce progeny. A century from now it
+will no more occur to a normal person to mate with a person
+eugenically unfit than to marry a habitual criminal.  In 1926, Tesla
+commented on the ills of the social subservience of women and the
+struggle of women toward gender equality, indicated that humanity's
+future would be run by "Queen Bees". He believed that women would
+become the dominant sex in the future.
+
+In his later years Tesla became a vegetarian. In an article for
+Century Illustrated Magazine he wrote: "It is certainly preferable to
+raise vegetables, and I think, therefore, that vegetarianism is a
+commendable departure from the established barbarous habit." Tesla
+argued that it is wrong to eat uneconomic meat when large numbers of
+people are starving; he also believed that plant food was "superior to
+(meat) in regard to both mechanical and mental performance". He also
+argued that animal slaughter was "wanton and cruel".
+
+In his final years he suffered from extreme sensitivity to light,
+sound and other influences.
+
+Death
+
+Tesla died of heart failure alone in room 3327 of the New Yorker
+Hotel, on 7 January 1943. Despite having sold his AC electricity
+patents, Tesla died with significant debts. Later that year the US
+Supreme Court upheld Tesla's patent number 645576 in a ruling that
+served as the basis for patented radio technology in the United
+States.
+
+Tesla's funeral took place on 12 January 1943, at the Cathedral of
+Saint John the Divine in Manhattan, New York City. His body was
+cremated and his ashes taken to Belgrade, Serbia, then-Yugoslavia in
+1957. The urn was placed in the Nikola Tesla Museum in Belgrade.
+
+Soon after his death Tesla's safe was opened by his nephew Sava
+Kosanovic. Shortly thereafter Tesla's papers and other property were
+impounded by the United States' Alien Property Custodian office in
+Tesla's compound at the Manhattan Warehouse, even though he was a
+naturalized citizen.
+
+Dr. John G. Trump was the main government official who went over
+Tesla's secret papers after his death in 1943. At the time, Trump was
+a well-known electrical engineer serving as a technical aide to the
+National Defense Research Committee of the Office of Scientific
+Research and Development, Technical Aids, Div. 14, NTRC (predecessor
+agency to the CIA's Office of Scientific Intelligence). Trump was also
+a professor at M.I.T., and had his feelings hurt by Tesla's 1938
+review and critique of M.I.T.'s huge Van de Graaff generator with its
+two thirty-foot towers and two 15-foot-diameter (4.6 m) balls, mounted
+on railroad tracks-which Tesla showed could be out-performed in both
+voltage and current by one of his tiny coils about two feet
+tall. Trump was asked to participate in the examination of Tesla's
+papers at the Manhattan Warehouse and Storage Co. Trump reported
+afterwards that no examination had been made of the vast amount of
+Tesla's property, that had been in the basement of the New Yorker
+Hotel, ten years prior to Tesla's death, or of any of his papers,
+except those in his immediate possession at the time of his
+death. Trump concluded in his report, that there was nothing that
+would constitute a hazard in unfriendly hands.
+
+At the time of his death, Tesla had been working on the Teleforce
+weapon, or 'death ray,' that he had unsuccessfully marketed to the US
+War Department. It appears that Teleforce was related to his research
+into ball lightning and plasma, and was conceived as a particle beam
+weapon. The US government did not find a prototype of the device in
+the safe.
+
+After the FBI was contacted by the War Department, his papers were
+declared to be top secret. The personal effects were sequestered on
+the advice of presidential advisers; J. Edgar Hoover declared the case
+most secret, because of the nature of Tesla's inventions and
+patents. One document stated that "(he) is reported to have some 80
+trunks in different places containing transcripts and plans having to
+do with his experiments". Altogether, in Tesla's effects, there were
+the contents of his safe, two truckloads of papers and apparati from
+his hotel, another 75 packing crates and trunks in a storage facility,
+and another 80 large storage trunks in another storage facility. The
+Navy and several "federal officials" spent two days microfilming some
+of the material at the Office of Alien Properties storage facility in
+1943, and that was it, until Oct., 1945.
+
+Tesla's family and the Yugoslav embassy struggled with the American
+authorities to gain these items after his death because of the
+potential significance of some of his research. Eventually
+Mr. Kosanovic won possession of the materials, which are now housed in
+the Nikola Tesla Museum.
+
+Literary works
+
+Apart from doing pure work on inventing things, Tesla also wrote a
+number of books and articles for magazines and journals.  Among his
+books are My Inventions: The Autobiography of Nikola Tesla, The
+Fantastic Inventions of Nikola Tesla and The Tesla Papers.
+
+A number of Tesla's writings are freely available on the web,
+including the article The Problem of Increasing Human Energy which he
+wrote for The Century Magazine, and the article Experiments With
+Alternate Currents Of High Potential And High Frequency published in
+his book Inventions, Researches and Writings of Nikola Tesla.
+
+Legacy and honors
+
+The tesla (symbol T) - compound derived SI unit of magnetic flux density.
+
+Tesla - a crater on the far side of the moon of 26 kilometers in
+diameter at -2,0 deg width, -132.0 deg height.
+
+2244 Tesla - a minor planet.
+
+TPP Nikola Tesla - the largest power plant in Serbia.
+
+The rock band Tesla takes its name from Nikola Tesla.
+
+An electric car company, Tesla Motors, named their company in tribute to Tesla.
+
+The Belgrade Nikola Tesla Airport is named in his honor.
+
+Google honoured Tesla on his birthday on 10 July 2009 by displaying a
+doodle in the Google search home page, that showed the G as a tesla
+coil.
+
+The Czechoslovakian electro-technical company Tesla.
+
+Monuments
+
+The Nikola Tesla Memorial Centre located in his birthplace of Smiljan
+near the town of Gospic in Croatia opened in 2006 features a statue of
+Tesla designed by sculptor Mile Blazevic. On 7 July 2006 on the corner
+of Masarykova and Preradoviceva streets in the Lower Town area in
+Zagreb the monument to Tesla was unveiled. This monument was designed
+by Ivan Mestrovic in 1952 and was transferred from the Zagreb-based
+Ruder Boskovic Institute where it had spent previous decades.
+
+A monument to Tesla was established at Niagara Falls, New York. This
+monument, sculpted by Frano Krsinic and portraying Tesla reading a set
+of notes, was presented to the United States by Yugoslavia in 1976 and
+is an identical copy of the monument standing in front of the
+University of Belgrade Faculty of Electrical Engineering. Another
+monument to Tesla, featuring him standing on a portion of an
+alternator, was established at Queen Victoria Park in Niagara Falls,
+Ontario, Canada. The monument was officially unveiled on 9 July 2006
+on the 150th anniversary of Tesla's birth. The monument was sponsored
+by St. George Serbian Church, Niagara Falls, and designed by Les
+Drysdale of Hamilton, Ontario. Drysdale's design was the winning
+design from an international competition.
+
+In 1994, acting on the advice of the President's Advisory Council on
+Historic Preservation, a formal nomination process was initiated by
+the Tesla Wardenclyffe Project seeking placement of the Wardenclyffe
+laboratory-office building and the Tesla tower foundation on both the
+New York State and National Registers of Historic Places. This would
+result in the creation of a monument to Tesla out of the Wardenclyffe
+site itself.
+
+Portrayals in popular culture
+
+Nikola Tesla has appeared in popular culture as a character in books,
+films, radio, TV, music, live theatre, comics and video games. The
+lack of recognition received by Tesla during his own lifetime has made
+him a tragic and inspirational character well suited to dramatic
+fiction. The impact of the technologies invented by Tesla is a
+recurring theme in several types of science fiction.
+
+
++
+From Wikipedia, the free encyclopedia.
+
+Text is available under the Creative Commons Attribution-ShareAlike
+License; additional terms may apply.
+
+This text was extracted from the Wikipedia article last modified on 7
+September 2011 at 21:20 UTC and has been edited and abridged for
+transcription into morse code.
+
+% ese ee
+
+
