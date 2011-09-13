@@ -274,8 +274,10 @@ void send_char(int ch)
 {
 	int c,len,code;
 	ch = toupper(ch);
-	if (ch > 95)
+	if (ch > 95) {
+		fprintf(stderr, "Unknown character '%c' (%d)\n", ch, ch);
 		return;
+	}
 	len = morse_table[ch].len;
 	if (len == 0)
 		return;
