@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+$chapter = "00";
+
+open(O, ">".$chapter);
+
+while (<STDIN>) {
+      if (/^CHAPTER ([0-9]+)/) {
+	$chapter = sprintf("%02d", $1);
+        print "Chapter: $1\n";
+	close($out);
+	open(O, ">".$chapter);
+      }
+      print O $_;
+}

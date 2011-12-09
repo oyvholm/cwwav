@@ -1,0 +1,16 @@
+#!/bin/sh
+
+SPEEDS="30"
+
+doit() {
+  echo "FILE: $2 NAME: $3 SPEED: $1"
+  rm -f ./tmp.wav
+  ../../cwwav -O wav -e 18 -f 650 -w $1 -o ./tmp.wav $2
+  lame --preset cbr 16 --tt "$3" --ta "Mark Twain" --tl "Huckleberry Finn $1 WPM" ./tmp.wav "o/$3.mp3"
+}
+
+for a in $SPEEDS; do
+  for b in [0-9]*; do
+    doit $a $b "Chapter $b"
+  done
+done
