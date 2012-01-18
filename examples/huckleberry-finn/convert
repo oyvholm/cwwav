@@ -4,14 +4,15 @@ SPEEDS="28 30"
 
 doit() {
   echo "FILE: $2 NAME: $3 SPEED: $1"
-  rm -f ./tmp.wav
-  ../../cwwav -O wav -e 18 -f 650 -w $1 -o ./tmp.wav $2
+  rm -f ./tmp$1.wav
+  ../../cwwav -O wav -e 18 -f 660 -w $1 -o ./tmp$1.wav $2
   mkdir -p o/$1
-  lame --preset cbr 16 --tt "$3" --ta "Mark Twain" --tl "Huckleberry Finn $1 WPM" ./tmp.wav "o/$1/$3.mp3"
+  lame --preset cbr 16 --tt "$3" --ta "Mark Twain" --tl "Huckleberry Finn $1 WPM" ./tmp$1.wav "o/$1/$3.mp3"
 }
 
-for a in $SPEEDS; do
-  for b in [0-9]*; do
-    doit $a $b "Chapter $b"
+for b in [0-9]*; do
+  for a in $SPEEDS; do
+    doit $a $b "Chapter $b" &
   done
+  wait
 done
