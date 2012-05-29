@@ -439,7 +439,7 @@ void print_help(const char *progname)
 	       "  -O, --output-format specify output file format (wav, default: wav)\n"
 #endif
 	       "  -f, --frequency=N   use sidetone frequency N Hz (default: 660)\n"
-	       "  -r, --rate=N        sample rate N (default 16000)\n"
+	       "  -r, --rate=N        sample rate N (default 8000)\n"
 	       "  -w, --wpm=N         use N words per minute (default: 25)\n"
 	       "  -e, --envelope=N    envelope N ms raised cosine (default=10.0)\n"
 	       "  -h, --help          display this help and exit\n", progname);
@@ -464,7 +464,7 @@ int main(int argc, char *argv[]) {
 			{0, 0, 0, 0} };
 
 	output_format = FORMAT_WAV;
-	samplerate = 16000;
+	samplerate = 8000;
 	frequency = 650;
 	wpm = 25;
 	envelope = 5.0; /* ms */

@@ -19,7 +19,7 @@ doit() {
   # Above 30WPM, e=18 is too high
   ../../cwwav -O wav -s -p 0.785 -e 10 -f 660 -w $1 -o ./tmp$1.wav $2
   mkdir -p o-s/$1
-  lame --preset cbr 32 -m s --tn "$4" --tt "$3" --ta "Mark Twain" --tl "Huckleberry Finn $1 WPM" ./tmp$1.wav "o-s/$1/$3.mp3"
+  lame --preset cbr 32 --clipdetect --scale .6 --cbr -b 32 -q 2 -m s --tn "$4" --tt "$3" --ta "Mark Twain" --tl "Huckleberry Finn $1 WPM" ./tmp$1.wav "o-s/$1/$3.mp3"
 }
 
 n=1
