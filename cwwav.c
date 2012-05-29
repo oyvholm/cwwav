@@ -61,9 +61,10 @@ char *outfname = NULL;
 /* Set before calling init */
 double wpm = 25.0;
 double farnsworth_wpm = 0.0;
-int frequency = 650;
+double phase_shift = 0.0;
+int frequency = 660;
 int stereo = 0;
-double envelope = 5.0;
+double envelope = 10.0;
 int samplerate;
 
 /* Set by init() */
@@ -180,16 +181,17 @@ static const uint8_t morse_extended_table[] =
 
 void init()
 {
-	int c;
+	int c,d;
+	int channels = stereo ? 2 : 1;
 	ms_per_dit = 1200.0/wpm;
 	if (ms_per_dit < 2.0)
 		ms_per_dit = 2.0;
 	dit.length = ceil((samplerate/1000.0)*ms_per_dit);
-	dit.samples = malloc(dit.length * sizeof(dit.samples[0]) * (stereo && output_format==FORMAT_WAV ? 2 : 1));
+	dit.samples = malloc(dit.length * sizeof(dit.samples[0]) * channels);
 	dah.length = dit.length * 3;
-	dah.samples = malloc(dah.length * sizeof(dah.samples[0]) * (stereo && output_format==FORMAT_WAV ? 2 : 1));
+	dah.samples = malloc(dah.length * sizeof(dah.samples[0]) * channels);
 	gap.length = dit.length;
-	gap.samples = malloc(gap.length * sizeof(gap.samples[0]) * (stereo && output_format==FORMAT_WAV ? 2 : 1));
+	gap.samples = malloc(gap.length * sizeof(gap.samples[0]) * channels);
 	dprintf("ms/samples per dit: %f/%d dah: %f/%d\n", ms_per_dit, dit.length, 3*ms_per_dit, dah.length);
 	if (dit.samples == NULL || dah.samples == NULL || gap.samples == NULL) {
 		fprintf(stderr, "Error allocating buffer\n");
@@ -200,35 +202,40 @@ void init()
 	       frequency, samples_per_cycle);
 	/* Fill in the raw sine wave */
 	for (c=0; c<dit.length; c++) {
-		dit.samples[c] = 32767 * sin((c/samples_per_cycle) * pi * 2.0);
+		dit.samples[c*channels] = 32767 * sin((c/samples_per_cycle) * pi * 2.0);
+		if (stereo)
+			dit.samples[c*channels+1] = 32767 * sin(((c/samples_per_cycle) * pi * 2.0) + phase_shift);
 	}
 	for (c=0; c<dah.length; c++) {
-		dah.samples[c] = 32767 * sin((c/samples_per_cycle) * pi * 2.0);
+		dah.samples[c*channels] = 32767 * sin((c/samples_per_cycle) * pi * 2.0);
+		if (stereo)
+			dah.samples[c*channels+1] = 32767 * sin(((c/samples_per_cycle) * pi * 2.0) + phase_shift);
 	}
-	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0])*stereo?2:1);
-	/* Apply envelope, 5ms sine hold rise and fall */
+	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0])*channels);
+
+	/* Apply envelope, variable raised cosine rise and fall */
 	double samples_in_envelope = envelope*samplerate/1000.0;
+	if (samples_in_envelope*2 > dit.length) {
+		fprintf(stderr, "Envelope cannot be longer than half a dit length.\n");
+		exit(1);
+	}
 	for (c=0; c<samples_in_envelope; c++) {
-		double factor = sin((pi/2.0)*(c/(double)samples_in_envelope));
-		dit.samples[c] = round((double)dit.samples[c] * factor);
-		dah.samples[c] = round((double)dah.samples[c] * factor);
-		dit.samples[dit.length-c] = round((double)dit.samples[dit.length-c] * factor);
-		dah.samples[dah.length-c] = round((double)dah.samples[dah.length-c] * factor);
+               double factor = sin((pi/2.0)*(c/(double)samples_in_envelope));
+               dit.samples[c*channels] = round((double)dit.samples[c*channels] * factor);
+               dah.samples[c*channels] = round((double)dah.samples[c*channels] * factor);
+               dit.samples[(dit.length-c)*channels] = round((double)dit.samples[(dit.length-c)*channels] * factor);
+               dah.samples[(dah.length-c)*channels] = round((double)dah.samples[(dah.length-c)*channels] * factor);
+		if (stereo) {
+               dit.samples[c*channels+1] = round((double)dit.samples[c*channels+1] * factor);
+               dah.samples[c*channels+1] = round((double)dah.samples[c*channels+1] * factor);
+               dit.samples[(dit.length-c)*channels+1] = round((double)dit.samples[(dit.length-c)*channels+1] * factor);
+               dah.samples[(dah.length-c)*channels+1] = round((double)dah.samples[(dah.length-c)*channels+1] * factor);
+		}
 	}
 #if 0
 	for (c=0; c<dit.length; c++)
 	{
 		dprintf("%d,%d\n", c, dit.samples[c]);
-	}
-#endif
-#if 1
-	if (stereo && output_format==FORMAT_WAV) {
-		for (c=2*dit.length-3; c>=0; c-=2) {
-			dit.samples[c] = dit.samples[c+1] = dit.samples[c/2];
-		}
-		for (c=2*dah.length-3; c>=0; c-=2) {
-			dah.samples[c] = dah.samples[c+1] = dah.samples[c/2];
-		}
 	}
 #endif
 }
@@ -242,12 +249,20 @@ void output(struct waveform *v)
 	}
 #ifdef HAVE_LAME
 	else if (output_format == FORMAT_MP3) {
-		r = lame_encode_buffer(lame_flags,
-				       v->samples,
-				       stereo ? v->samples : NULL,
-				       v->length,
-				       mp3buf,
-				       mp3buf_size);
+		if (!stereo) {
+			r = lame_encode_buffer(lame_flags,
+					       v->samples,
+					       NULL,
+					       v->length,
+					       mp3buf,
+					       mp3buf_size);
+		} else {
+			r = lame_encode_buffer_interleaved(lame_flags,
+							   v->samples,
+							   v->length,
+							   mp3buf,
+							   mp3buf_size);
+		}
 		if (r < 0) {
 			fprintf(stderr, "LAME encoding error: %d\n", r);
 			exit(1);
@@ -415,17 +430,18 @@ void print_help(const char *progname)
 	       "Convert text into an audio file with morse code.\n"
 	       "\n"
 	       "Mandatory arguments to long options are mandatory for short options too.\n"
-	       "  -s, --stereo        generate stereo output (two identical channels)\n"
+	       "  -s, --stereo        generate stereo output (by default 2 identical channels)\n"
+	       "  -p, --phaseshift N  shift phase of right channel by N radians (stereo effect)\n"
 	       "  -o, --output        specify output file (must be supplied for WAV output)\n"
 #ifdef HAVE_LAME
 	       "  -O, --output-format specify output file format (wav or mp3, default: wav)\n"
 #else
 	       "  -O, --output-format specify output file format (wav, default: wav)\n"
 #endif
-	       "  -f, --frequency=N   use sidetone frequency N Hz (default: 750)\n"
+	       "  -f, --frequency=N   use sidetone frequency N Hz (default: 660)\n"
 	       "  -r, --rate=N        sample rate N (default 16000)\n"
 	       "  -w, --wpm=N         use N words per minute (default: 25)\n"
-	       "  -e, --envelope=N    envelope N ms at start/end of each tone (default=10)\n"
+	       "  -e, --envelope=N    envelope N ms raised cosine (default=10.0)\n"
 	       "  -h, --help          display this help and exit\n", progname);
 }
 
@@ -438,6 +454,7 @@ int main(int argc, char *argv[]) {
 	static struct option long_options[] = {
 			{ "help", no_argument, 0, 'h' },
 			{ "stereo", no_argument, 0, 's' },
+			{ "phaseshift", required_argument, 0, 'p' },
 			{ "rate", required_argument, 0, 'r' },
 			{ "output", required_argument, 0, 'o' },
 			{ "output-format", required_argument, 0, 'O' },
@@ -453,7 +470,7 @@ int main(int argc, char *argv[]) {
 	envelope = 5.0; /* ms */
 
 	while (1) {
-		int c = getopt_long(argc, argv, "hsr:o:O:f:w:e:", long_options,
+		int c = getopt_long(argc, argv, "hsp:r:o:O:f:w:e:", long_options,
 			&option_index);
 		if (c == -1)
 			break;
@@ -463,6 +480,10 @@ int main(int argc, char *argv[]) {
 			exit(0);
 		case 's':
 			stereo = 1;
+			break;
+		case 'p':
+			phase_shift = atof(optarg);
+			break;
 		case 'o':
 			outfname = optarg;
 			break;
