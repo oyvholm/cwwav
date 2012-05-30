@@ -35,10 +35,10 @@ well. That is, it is designed to produce good sounding CW output
 files, with proper timing and comfortable envelope to avoid keyclicks
 and make the CW softer.
 
-This is a VERY EARLY alpha release, there are still many more features
-to be added such as better mapping for some characters and prosigns.
+This is a beta version and I still plan to add more features. Requests
+are welcome.
 
-But it does generate nice practice fiels!
+But as it is, it does generate nice practice files!
 
 
 Installation
@@ -66,22 +66,31 @@ install it system-wide by doing:
 
   $ sudo make install
 
+However, I haven't added a ton of LAME encoder options and I find that
+using the "lame" command line tool to convert the WAV files to MP3 is
+more flexible. See the script in examples/huckleberry-finn for an
+example on how to batch convert a bunch of text files into MP3.
+
 
 How to use
 ==========
 
-Usage: cwwav OPTIONS [FILENAME...]
+Usage: ./cwwav OPTIONS [FILENAME...]
 Convert text into an audio file with morse code.
 
 Mandatory arguments to long options are mandatory for short options too.
-  -s, --stereo        generate stereo output (two identical channels)
+  -s, --stereo        generate stereo output (by default 2 identical channels)
+  -p, --phaseshift N  shift phase of right channel by N radians (stereo effect)
   -o, --output        specify output file (must be supplied for WAV output)
   -O, --output-format specify output file format (wav or mp3, default: wav)
-  -f, --frequency=N   use sidetone frequency N Hz (default: 750)
-  -r, --rate=N        sample rate N (default 16000)
+  -f, --frequency=N   use sidetone frequency N Hz (default: 660)
+  -r, --rate=N        sample rate N (default 8000)
   -w, --wpm=N         use N words per minute (default: 25)
-  -e, --envelope=N    envelope N ms at start/end of each tone (default=10)
+  -e, --envelope=N    envelope N ms raised cosine (default=10.0)
   -h, --help          display this help and exit
+
+Usage: cwwav OPTIONS [FILENAME...]
+
 
 Example
 =======
@@ -93,13 +102,14 @@ on Wikipedia and covnerted into text (examples/maxwell.txt).
 
  $ ./cwwav --output maxwell.mp3 --frequency=650 --wpm=20 examples/maxwell.txt
 
-2b. Old method, or if you don't have the LAME library installed:
+2b. Old method, or if you don't have the LAME library installed, or if
+you prefer to add options to lame:
 
 Then I converted it to a 20-WPM CW file like this:
 
  $ ./cwwav --output maxwell.wav --frequency=650 --rate=16000 --wpm=20 examples/maxwell.txt
 
-4. Then I converted the resulting WAV file into an MP3 file using
+3. Then I converted the resulting WAV file into an MP3 file using
 lame:
 
  $ lame --preset phone maxwell.wav maxwell.mp3
@@ -109,11 +119,13 @@ resulting maxwell.mp3 file to my phone.
 
 I hope you enjoy this program and find it useful for generating
 practice files. Any commends, suggestions etc. are very welcome, my
-email address is thomas@ at horsten dot com.
+email address is thomas at horsten dot com.
 
 
 Releases
 ========
+
+0.3 - Add stereo effect (phase shifting 1 channel) and more examples
 
 0.2.1 - First release with MP3 support
 
