@@ -32,6 +32,9 @@
 #ifdef HAVE_LAME
 #include <lame/lame.h>
 #endif
+#include <locale.h>
+#include <wchar.h>
+#include <wctype.h>
 
 #if 0
 #define dprintf(args...) fprintf(stderr, args)
@@ -158,6 +161,14 @@ static const struct morse_code morse_table[] =
   { 0, 0 },     // 93: ]
   { 0, 0 },     // 94: ^
   { 6, 13 },    // 95: _: : ..__._
+
+  // Extended UTF-8 characters translated in send_char()
+  { 4, 0x05 },  // 96: Æ/Ä: ._._
+  { 4, 0x0e },  // 97: Ø/Ö/Ó: ___.
+  { 5, 0x0d },  // 98: Å,À: .__._
+  { 5, 0x14 },  // 99: Ç: _._..
+  { 4, 0x03 },  // 100: Ü: ..--
+  { 5, 0x04 },  // 101: É: ..-..
 };
 
 static const uint8_t morse_extended_table[] =
@@ -285,13 +296,57 @@ void send_space(int len)
 	}
 }
 
-void send_char(int ch)
+wint_t translate_utf(wint_t ch)
 {
-	int c,len,code;
-	ch = toupper(ch);
+	switch (ch) {
+	case 0x00c6: // Æ
+	case 0x00c4: // Ä
+		ch = 96;
+		break;
+	case 0xd8: // Ø
+	case 0xd6: // Ö
+	case 0xd3: // Ó
+		ch = 97;
+		break;
+	case 0xc5: // Å
+	case 0xc0: // À
+		ch = 98;
+		break;
+	case 0xc7: // Ç
+		ch = 99;
+		break;
+	case 0xdc: // Ü
+		ch = 100;
+		break;
+	case 0xc9: // É
+		ch = 101;
+		break;
+
+        // Transformed to lookalikes:
+	case 0xc1: // Á
+		ch = 'A';
+		break;
+	case 0xcf: // Ï
+		ch = 'I';
+		break;
+	case 0xcb: // Ë
+		ch = 'E';
+		break;
+	}
+	return ch;
+}
+
+void send_char(wint_t ch)
+{
+	int c,len,code,ch1;
+	ch = towupper(ch);
 	if (ch > 95) {
-		fprintf(stderr, "Unknown character '%c' (%d)\n", ch, ch);
-		return;
+		ch1 = translate_utf(ch);
+		if (ch == ch1) {
+			fprintf(stderr, "Unknown character '%lc' (%d)\n", ch, ch);
+			return;
+		}
+		ch = ch1;
 	}
 	len = morse_table[ch].len;
 	if (len == 0)
@@ -391,9 +446,9 @@ void setup_output()
 int text_to_morse(FILE *f) {
 	int space = 0;
 	int nl = 0;
-	int c;
+	wint_t c;
 
-	while ((c = fgetc(f)) != EOF) {
+	while ((c = fgetwc(f)) != WEOF) {
 		if (c == 13)
 			continue;
 		if (c == 10) {
@@ -406,11 +461,19 @@ int text_to_morse(FILE *f) {
 			continue;
 		}
 		if (nl > 1) {
-			dprintf("Paragraph break\n");
 			space=0;
-			send_space(7);
-			send_char('=');
-			send_space(4);
+			if (nl == 2) {	
+				dprintf("Paragraph break\n");
+				send_space(14);
+			} else {
+				dprintf("Section break\n");
+				send_space(28);
+			}
+			//dprintf("Paragraph break\n");
+			//space=0;
+			//send_space(7);
+			//send_char('=');
+			//send_space(4);
 		}
 		nl = 0;
 		if (space) {
@@ -422,6 +485,7 @@ int text_to_morse(FILE *f) {
 		send_space(3);
 		send_char(c);
 	}
+	dprintf("C: %d %m\n", c);
 }
 
 void print_help(const char *progname)
@@ -449,6 +513,8 @@ int main(int argc, char *argv[]) {
 	int c;
 	int space,nl;
 	FILE *f;
+
+	setlocale(LC_CTYPE, "");
 
 	int option_index = 0;
 	static struct option long_options[] = {
