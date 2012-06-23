@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+$chapter = "00";
+
+mkdir("o");
+open(O, ">o/".$chapter);
+
+while (<STDIN>) {
+      if (/^##([0-9]+)##/) {
+	$chapter = sprintf("%02d", $1);
+        print "Chapter: $1\n";
+	close($out);
+	open(O, ">o/".$chapter);
+	next;
+      }
+      print O $_;
+}

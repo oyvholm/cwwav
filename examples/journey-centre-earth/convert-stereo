@@ -1,0 +1,35 @@
+#!/bin/sh
+
+# Play with the -p value to get the stereo effect you like best...
+# Value is in radians. Meaningful values are 0-3.141.
+
+# The stereo examples are encoded at a higher bitrate and with true
+# stereo to prevent artifacts. So they are also twice as big as the
+# mono ones. Feel free to play with the Lame settings and if you find
+# something else that works well then let me know.
+
+SPEEDS="35 40 45"
+
+
+
+doit() {
+  echo "FILE: $2 NAME: $3 SPEED: $1 TRACKNUM $4"
+  rm -f ./tmp$1.wav
+  #../../cwwav -O wav -e 18 -f 660 -w $1 -o ./tmp$1.wav $2
+  # Above 30WPM, e=18 is too high
+  ../../cwwav -O wav -s -p 0.4 -e 8 -f 523 -w $1 -o ./tmp$1.wav $2
+  mkdir -p o-s/$1
+  #lame --preset cbr 32 --clipdetect --scale .6 --cbr -b 32 -q 2 -m s --tn "$4" --tt "$3" --ta "Jules Verne" --tl "A Journey to the Interior of the Earth $1 WPM" ./tmp$1.wav "o-s/$1/$3.mp3"
+}
+
+./splitter < ./edited-cw.txt
+
+n=1
+for b in o/[0-9]*; do
+  cn=`echo $b | sed -e 's|o/||;'`
+  for a in $SPEEDS; do
+    doit $a $b "Chapter $cn" $n &
+  done
+  n=$((n + 1))
+  wait
+done
