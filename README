@@ -125,6 +125,14 @@ email address is thomas at horsten dot com.
 Releases
 ========
 
+0.4 - Add UTF-8 text file support, and support for a number of
+European accented letters, should be good to transcribe
+Danish/Norwegian/Swedish/German files and possibly French. Also
+changed paragraph breaks (an empty line in the input) to produce a
+short pause instead of " = ". Added "A Journey to the Interior of the
+Earth" by Jules Verne (from Project Gutenberg) to the examples, along
+with a conversion script with some nice settings.
+
 0.3 - Add stereo effect (phase shifting 1 channel) and more examples
 
 0.2.1 - First release with MP3 support
