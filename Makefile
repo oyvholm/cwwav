@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=
-LDFLAGS=-lm -lsndfile
+LDLIBS=-lm -lsndfile
 
 ifeq ($(LAME),1)
   LDFLAGS+=-lmp3lame
