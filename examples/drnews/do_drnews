@@ -1,0 +1,23 @@
+#!/bin/sh
+
+rm -f drnews.txt
+./drnews.php > /dev/null
+
+SPEEDS="30 40 45"
+#SPEEDS="50"
+
+
+doit() {
+  rm -f ./tmp$1.wav
+  #../../cwwav -O wav -e 18 -f 660 -w $1 -o ./tmp$1.wav drnews.txt
+  # Above 30WPM, e=18 is too high
+  ../../cwwav -O wav -s -p 0.4 -e 8 -f 523 -w $1 -o ./tmp$1.wav drnews.txt
+  lame --preset cbr 32 --clipdetect --scale .6 --cbr -b 32 -q 2 -m s --tn "01" --tt "DR Nyheder $1 WPM" --ta "dr.dk" --tl "Nyheder fra dr.dk" ./tmp$1.wav DR-News-$1.mp3
+}
+
+
+for a in $SPEEDS; do
+  doit $a &
+done
+wait
+rm tmp*.wav
