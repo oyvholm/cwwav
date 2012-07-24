@@ -299,6 +299,9 @@ void send_space(int len)
 wint_t translate_utf(wint_t ch)
 {
 	switch (ch) {
+	case 0x00a0: // " ", non-breaking space
+		ch = ' ';
+		break;
 	case 0x00c6: // Æ
 	case 0x00c4: // Ä
 		ch = 96;
