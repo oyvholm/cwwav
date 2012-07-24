@@ -59,6 +59,7 @@ function main()
 	$upddate = dkzdate(time());
 	
 	$allnews = "\n\nNyheder fra dr.dk opdateret $upddate =\n\n\n";
+	$articles = array();
 	//echo $allnews;
 	//exit(0);
 
@@ -95,16 +96,22 @@ function main()
 				$node->parentNode->replaceChild($DOM->createTextNode("\n\n"), $node);
 			}
 
-			// Replace <STRONG>'s with  "= xxx =\n\n" (subheadings use this)
 			$brs = $item->getElementsByTagName('strong');
 			foreach ($brs as $node) {
-				$node->parentNode->replaceChild($DOM->createTextNode("= ".trim($node->nodeValue)." =\n"), $node);
+				$node->parentNode->replaceChild($DOM->createTextNode("= ".trim($node->nodeValue)." =\n\n"), $node);
 			}
 		
 			// Replace paragraphs with double newline
 			$content = "";
 			$ps = $item->getElementsByTagName('p');
 			foreach ($ps as $node) {
+
+				// Replace <STRONG>'s with  "= xxx =\n\n" (subheadings use this)
+				$brs = $node->getElementsByTagName('strong');
+				foreach ($brs as $node1) {
+					$node1->parentNode->replaceChild($DOM->createTextNode("= ".trim($node1->nodeValue)." =\n\n"), $node1);
+				}
+
 				$p = trim($node->nodeValue);
 				if (preg_match('|LÆS OGSÅ:.*|', $p))
 					continue;
@@ -113,6 +120,7 @@ function main()
 
 			$content = str_replace(" ", " ", $content); /* &nbsp; */
 			$content = str_replace("_", " ", $content);
+			$content = preg_replace('|^\s+$|m', '', $content);
 			$content = str_replace("\r", "", $content);
 			$content = str_replace("\n\n\n", "\n\n", $content);
 			$content = str_replace("\n\n\n", "\n\n", $content);
@@ -120,14 +128,28 @@ function main()
 			//echo "Content:\n" . $content. "\n";
 			//break;
 
+			$articles[] = array(
+				'datestamp'  => $datestamp,
+				'headline'   => $headline,
+				'content'    => "*\n\n" . $headline . " =\n\n" . $datestamp . " =\n\n" . $content . "\n\n+\n\n\n");
+
 			$allnews .= "*\n\n" . $headline . " =\n\n" . $datestamp . " =\n\n" . $content . "\n\n+\n\n\n";
 		}
 
 	}
 	$allnews .= "\n%\n\n\n";
 	file_put_contents("drnews.txt", $allnews);
+	$shellscript = "";
+        $n = 0;
+	foreach ($articles as $a) {
+		$n++;
+		$fname = sprintf("%02d.txt", $n);
+		file_put_contents($fname, $a['content']);
+		$shellscript .= "process $fname " . escapeshellarg($a['headline']) . " " . escapeshellarg($a['datestamp']) . "\n";
+	}
+	file_put_contents("shell-article-list", $shellscript);
 
-	echo "Done\n";
+	echo "Done - $n articles\n";
 }
 
 main();

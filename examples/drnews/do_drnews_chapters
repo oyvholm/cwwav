@@ -1,0 +1,25 @@
+#!/bin/sh
+
+rm -rf o drnews.txt [0-9]*.txt shell-article-list
+./drnews.php > /dev/null
+
+#SPEEDS="30 40 45"
+SPEEDS="30 35"
+
+
+# call process FILENAME TITLE DATESTAMP
+process() {
+  NR=`echo $1 | cut -f1 -d.`
+  TMPFILE=$NR-$SPEED.wav
+  rm -f $TMPFILE
+  ../../cwwav -O wav -s -p 0.4 -e 8 -f 523 -w $SPEED -o $TMPFILE $1
+  lame --preset cbr 32 --clipdetect --scale .6 --cbr -b 32 -q 2 -m s --tn "01" --tt "$2" --ta "dr.dk" --tl "Nyheder $SPEED WPM" $TMPFILE o/$a/$NR-DR-Nyheder.mp3
+  rm $TMPFILE
+}
+
+for a in $SPEEDS; do
+  mkdir -p o/$a
+  (SPEED=$a . ./shell-article-list) &
+done
+wait
+rm -f tmp*.wav [0-9]*.txt
