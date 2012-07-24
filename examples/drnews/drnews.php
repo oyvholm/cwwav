@@ -120,7 +120,7 @@ function main()
 			//echo "Content:\n" . $content. "\n";
 			//break;
 
-			$allnews .= "*\n\n" . $headline . " =\n\n" . $datestamp . " =\n\n" . $content . "\n+\n\n\n";
+			$allnews .= "*\n\n" . $headline . " =\n\n" . $datestamp . " =\n\n" . $content . "\n\n+\n\n\n";
 		}
 
 	}
