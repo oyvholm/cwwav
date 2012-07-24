@@ -335,6 +335,9 @@ wint_t translate_utf(wint_t ch)
 	case 0xcb: // Ë
 		ch = 'E';
 		break;
+	case 0x2019: // Another apostrophe
+		ch = '\'';
+		break;
 	}
 	return ch;
 }

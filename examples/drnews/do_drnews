@@ -3,8 +3,8 @@
 rm -f drnews.txt
 ./drnews.php > /dev/null
 
-SPEEDS="30 40 45"
-#SPEEDS="50"
+#SPEEDS="30 40 45"
+SPEEDS="35"
 
 
 doit() {
