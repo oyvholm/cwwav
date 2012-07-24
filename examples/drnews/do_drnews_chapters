@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Call with a number argument to do only most recent N stories
+
 rm -rf o drnews.txt [0-9]*.txt shell-article-list
 ./drnews.php > /dev/null
 
@@ -17,9 +19,15 @@ process() {
   rm $TMPFILE
 }
 
+if [ "$1" != "" ]; then
+  head -n $1 shell-article-list > s1
+else
+  cp shell-article-list s1
+fi
+
 for a in $SPEEDS; do
   mkdir -p o/$a
-  (SPEED=$a . ./shell-article-list) &
+  (SPEED=$a . ./s1) &
 done
 wait
-rm -f tmp*.wav [0-9]*.txt
+rm -f tmp*.wav [0-9]*.txt s1
