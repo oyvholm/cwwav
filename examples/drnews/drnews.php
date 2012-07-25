@@ -9,7 +9,7 @@ function dkzdate($timestamp)
 {
 	global $months;
 	return date("d", $timestamp) . " " .
-		$months[(int)(date("n", $timestamp))] . " " .
+		$months[(int)(date("n", $timestamp)) - 1] . " " .
 		date("Y", $timestamp) . " " .
 		date("Hi", $timestamp) . "z";
 }

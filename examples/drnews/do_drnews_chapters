@@ -12,10 +12,12 @@ SPEEDS="30 35"
 # call process FILENAME TITLE DATESTAMP
 process() {
   NR=`echo $1 | cut -f1 -d.`
+  TITLETAG=`echo $2 | iconv -f utf-8 -t iso-8859-1`
+
   TMPFILE=$NR-$SPEED.wav
   rm -f $TMPFILE
-  ../../cwwav -O wav -s -p 0.4 -e 8 -f 523 -w $SPEED -o $TMPFILE $1
-  lame --preset cbr 32 --clipdetect --scale .6 --cbr -b 32 -q 2 -m s --tn "01" --tt "$2" --ta "dr.dk" --tl "Nyheder $SPEED WPM" $TMPFILE o/$a/$NR-DR-Nyheder.mp3
+  ../../cwwav -O wav -s -p 0.4 -e 8 -f 660 -w $SPEED -o $TMPFILE $1
+  lame --preset cbr 32 --clipdetect --scale .6 --cbr -b 16 -q 9 -m s --tn "01" --tt "$TITLETAG" --ta "dr.dk" --tl "Nyheder $SPEED WPM" $TMPFILE o/$a/$NR-DR-Nyheder.mp3
   rm $TMPFILE
 }
 
