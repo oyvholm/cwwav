@@ -302,6 +302,12 @@ wint_t translate_utf(wint_t ch)
 	case 0x00a0: // " ", non-breaking space
 		ch = ' ';
 		break;
+	case 0x00ab:
+		ch = '"'; // «
+		break;
+	case 0x00bb:
+		ch = '"'; // »
+		break;
 	case 0x00c6: // Æ
 	case 0x00c4: // Ä
 		ch = 96;
