@@ -6,7 +6,7 @@ rm -rf o drnews.txt [0-9]*.txt shell-article-list
 ./drnews.php > /dev/null
 
 #SPEEDS="30 40 45"
-SPEEDS="30 35"
+SPEEDS="35"
 
 
 # call process FILENAME TITLE DATESTAMP
