@@ -50,6 +50,7 @@ struct waveform {
 struct waveform dit;
 struct waveform dah;
 struct waveform gap;
+struct waveform f_gap;
 
 static SNDFILE *sf;
 int outfd;
@@ -68,7 +69,7 @@ double phase_shift = 0.0;
 int frequency = 660;
 int stereo = 0;
 double envelope = 10.0;
-int samplerate;
+int samplerate = 16000;
 
 /* Set by init() */
 double ms_per_dit;
@@ -194,6 +195,7 @@ void init()
 {
 	int c,d;
 	int channels = stereo ? 2 : 1;
+	double f_ta, f_tb;
 	ms_per_dit = 1200.0/wpm;
 	if (ms_per_dit < 2.0)
 		ms_per_dit = 2.0;
@@ -203,6 +205,17 @@ void init()
 	dah.samples = malloc(dah.length * sizeof(dah.samples[0]) * channels);
 	gap.length = dit.length;
 	gap.samples = malloc(gap.length * sizeof(gap.samples[0]) * channels);
+	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0])*channels);
+	if (farnsworth_wpm != 0.0) {
+		f_ta = 1000.0 * ((60.0*wpm - 37.2*farnsworth_wpm) / (farnsworth_wpm*wpm));
+		// Not used: f_tc = (3.0*f_ta)/19.0;
+		// Not used: f_tw = (7.0*f_ta)/19.0;
+		f_tb = f_ta/19.0; // Farnsworth base delay
+		printf("f_tb: %f\n", f_tb);
+		f_gap.length = ceil((samplerate/1000.0)*f_tb);
+		f_gap.samples = malloc(f_gap.length * sizeof(f_gap.samples[0]) * channels);
+		memset(f_gap.samples, 0, f_gap.length*sizeof(f_gap.samples[0])*channels);
+	}
 	dprintf("ms/samples per dit: %f/%d dah: %f/%d\n", ms_per_dit, dit.length, 3*ms_per_dit, dah.length);
 	if (dit.samples == NULL || dah.samples == NULL || gap.samples == NULL) {
 		fprintf(stderr, "Error allocating buffer\n");
@@ -222,7 +235,6 @@ void init()
 		if (stereo)
 			dah.samples[c*channels+1] = 32767 * sin(((c/samples_per_cycle) * pi * 2.0) + phase_shift);
 	}
-	memset(gap.samples, 0, gap.length*sizeof(gap.samples[0])*channels);
 
 	/* Apply envelope, variable raised cosine rise and fall */
 	double samples_in_envelope = envelope*samplerate/1000.0;
@@ -293,6 +305,14 @@ void send_space(int len)
 	int c;
 	for (c=0; c<len; c++) {
 		output(&gap);
+	}
+}
+
+void send_fspace(int len)
+{
+	int c;
+	for (c=0; c<len; c++) {
+		output(&f_gap);
 	}
 }
 
@@ -438,11 +458,11 @@ void setup_output()
 		}
 		lame_set_in_samplerate(lame_flags, samplerate);
 		lame_set_num_channels(lame_flags, stereo ? 2 : 1);
-		lame_set_mode(lame_flags, stereo ? JOINT_STEREO : MONO);
-		lame_set_quality(lame_flags, 5);
-		lame_set_VBR(lame_flags, vbr_abr);
-		lame_set_preset(lame_flags, 16); /* ABR 16, same as "phone" preset */
-		lame_set_bWriteVbrTag(lame_flags, 1);
+		lame_set_mode(lame_flags, stereo ? STEREO : MONO);
+		lame_set_quality(lame_flags, 9);
+		lame_set_VBR(lame_flags, vbr_off);
+		lame_set_preset(lame_flags, stereo ? 32 : 16);
+		//lame_set_bWriteVbrTag(lame_flags, 1);
 		if ( 0 > lame_init_params(lame_flags)) {
 			fprintf(stderr, "LAME init params failed\n");
 		}
@@ -477,9 +497,13 @@ int text_to_morse(FILE *f) {
 			if (nl == 2) {	
 				dprintf("Paragraph break\n");
 				send_space(14);
+				if (farnsworth_wpm != 0.0)
+					send_fspace(3*7);
 			} else {
 				dprintf("Section break\n");
 				send_space(28);
+				if (farnsworth_wpm != 0.0)
+					send_fspace(6*7);
 			}
 			//dprintf("Paragraph break\n");
 			//space=0;
@@ -491,10 +515,15 @@ int text_to_morse(FILE *f) {
 		if (space) {
 			dprintf("Space\n");
 			send_space(4);
+			if (farnsworth_wpm != 0.0)
+				send_fspace(1*4);
 			space=0;
 		}
 		dprintf("C: %d %c\n", c, c);
 		send_space(3);
+		if (farnsworth_wpm != 0.0)
+			send_fspace(1*3);
+		space=0;
 		send_char(c);
 	}
 	dprintf("C: %d %m\n", c);
@@ -515,8 +544,9 @@ void print_help(const char *progname)
 	       "  -O, --output-format specify output file format (wav, default: wav)\n"
 #endif
 	       "  -f, --frequency=N   use sidetone frequency N Hz (default: 660)\n"
-	       "  -r, --rate=N        sample rate N (default 8000)\n"
+	       "  -r, --rate=N        sample rate N (default 16000)\n"
 	       "  -w, --wpm=N         use N words per minute (default: 25)\n"
+	       "  -F, --farnsworth=N  use N WPM Farnsworth speed (default: same as WPM)\n"
 	       "  -e, --envelope=N    envelope N ms raised cosine (default=10.0)\n"
 	       "  -h, --help          display this help and exit\n", progname);
 }
@@ -538,17 +568,18 @@ int main(int argc, char *argv[]) {
 			{ "output-format", required_argument, 0, 'O' },
 			{ "frequency", required_argument, 0, 'f' },
 			{ "wpm", required_argument, 0, 'w' },
+			{ "farnsworth", required_argument, 0, 'F' },
 			{ "envelope", required_argument, 0, 'e' },
 			{0, 0, 0, 0} };
 
 	output_format = FORMAT_WAV;
-	samplerate = 8000;
+	samplerate = 16000;
 	frequency = 650;
 	wpm = 25;
 	envelope = 5.0; /* ms */
 
 	while (1) {
-		int c = getopt_long(argc, argv, "hsp:r:o:O:f:w:e:", long_options,
+		int c = getopt_long(argc, argv, "hsp:r:o:O:f:w:F:e:", long_options,
 			&option_index);
 		if (c == -1)
 			break;
@@ -576,6 +607,9 @@ int main(int argc, char *argv[]) {
 			break;
 		case 'w':
 			wpm = atof(optarg);
+			break;
+		case 'F':
+			farnsworth_wpm = atof(optarg);
 			break;
 		case 'O':
 			if (!strcmp(optarg, "wav")) {
@@ -605,6 +639,10 @@ int main(int argc, char *argv[]) {
 
 	if (wpm < 1.0)
 		wpm = 1.0;
+	if (farnsworth_wpm != 0.0 && (farnsworth_wpm >= wpm)) {
+		fprintf(stderr, "Warning: Farnsworth speed must be lower than WPM, ignored.\n");
+		farnsworth_wpm = 0.0;
+	}
 
 	if (output_format == FORMAT_WAV && (!outfname || !strcmp(outfname, "-"))) {
 		fprintf(stderr, "Error: Cannot write WAV format to standard output, specify output file with\nthe --output option or use another format (try --help)\n");
