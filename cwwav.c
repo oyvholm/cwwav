@@ -211,7 +211,7 @@ void init()
 		// Not used: f_tc = (3.0*f_ta)/19.0;
 		// Not used: f_tw = (7.0*f_ta)/19.0;
 		f_tb = f_ta/19.0; // Farnsworth base delay
-		printf("f_tb: %f\n", f_tb);
+		//printf("f_tb: %f\n", f_tb);
 		f_gap.length = ceil((samplerate/1000.0)*f_tb);
 		f_gap.samples = malloc(f_gap.length * sizeof(f_gap.samples[0]) * channels);
 		memset(f_gap.samples, 0, f_gap.length*sizeof(f_gap.samples[0])*channels);

@@ -2,7 +2,7 @@
 cwwav
 =====
 
-Copyright (C) 2011 by Thomas Horsten
+Copyright (C) 2011-2014 by Thomas Horsten
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -84,12 +84,12 @@ Mandatory arguments to long options are mandatory for short options too.
   -o, --output        specify output file (must be supplied for WAV output)
   -O, --output-format specify output file format (wav or mp3, default: wav)
   -f, --frequency=N   use sidetone frequency N Hz (default: 660)
-  -r, --rate=N        sample rate N (default 8000)
+  -r, --rate=N        sample rate N (default 16000)
   -w, --wpm=N         use N words per minute (default: 25)
+  -F, --farnsworth=N  use N WPM Farnsworth speed (default: same as WPM)
   -e, --envelope=N    envelope N ms raised cosine (default=10.0)
   -h, --help          display this help and exit
-
-Usage: cwwav OPTIONS [FILENAME...]
+Convert text into an audio file with morse code.
 
 
 Example
