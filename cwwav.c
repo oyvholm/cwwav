@@ -35,6 +35,7 @@
 #include <locale.h>
 #include <wchar.h>
 #include <wctype.h>
+#include <ctype.h>
 
 #if 0
 #define dprintf(args...) fprintf(stderr, args)
