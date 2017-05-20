@@ -477,7 +477,7 @@ void setup_output()
 	}
 #endif
 }
-int text_to_morse(FILE *f) {
+void text_to_morse(FILE *f) {
 	int space = 0;
 	int nl = 0;
 	wint_t c;
