@@ -15,7 +15,7 @@ endif
 all: cwwav
 
 clean:
-	rm cwwav
+	rm -f cwwav
 
 install: all
 	install -d /usr/local/bin
