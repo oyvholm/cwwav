@@ -266,13 +266,13 @@ void init()
 
 void output(struct waveform *v)
 {
-	int r;
 	dprintf("Output %s\n", v==&gap?"gap":v==&dit?"dit":v==&dah?"dah":"???");
 	if (output_format == FORMAT_WAV) {
 		sf_writef_short(sf, v->samples, v->length);
 	}
 #ifdef HAVE_LAME
 	else if (output_format == FORMAT_MP3) {
+		int r;
 		if (!stereo) {
 			r = lame_encode_buffer(lame_flags,
 					       v->samples,
