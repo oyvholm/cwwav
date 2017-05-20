@@ -194,7 +194,7 @@ static const uint8_t morse_extended_table[] =
 
 void init()
 {
-	int c;
+	uint32_t c;
 	int channels = stereo ? 2 : 1;
 	double f_ta, f_tb;
 	ms_per_dit = 1200.0/wpm;
