@@ -244,16 +244,16 @@ void init()
 		exit(1);
 	}
 	for (c=0; c<samples_in_envelope; c++) {
-               double factor = sin((pi/2.0)*(c/(double)samples_in_envelope));
-               dit.samples[c*channels] = round((double)dit.samples[c*channels] * factor);
-               dah.samples[c*channels] = round((double)dah.samples[c*channels] * factor);
-               dit.samples[(dit.length-c)*channels] = round((double)dit.samples[(dit.length-c)*channels] * factor);
-               dah.samples[(dah.length-c)*channels] = round((double)dah.samples[(dah.length-c)*channels] * factor);
+		double factor = sin((pi/2.0)*(c/(double)samples_in_envelope));
+		dit.samples[c*channels] = round((double)dit.samples[c*channels] * factor);
+		dah.samples[c*channels] = round((double)dah.samples[c*channels] * factor);
+		dit.samples[(dit.length-c)*channels] = round((double)dit.samples[(dit.length-c)*channels] * factor);
+		dah.samples[(dah.length-c)*channels] = round((double)dah.samples[(dah.length-c)*channels] * factor);
 		if (stereo) {
-               dit.samples[c*channels+1] = round((double)dit.samples[c*channels+1] * factor);
-               dah.samples[c*channels+1] = round((double)dah.samples[c*channels+1] * factor);
-               dit.samples[(dit.length-c)*channels+1] = round((double)dit.samples[(dit.length-c)*channels+1] * factor);
-               dah.samples[(dah.length-c)*channels+1] = round((double)dah.samples[(dah.length-c)*channels+1] * factor);
+			dit.samples[c*channels+1] = round((double)dit.samples[c*channels+1] * factor);
+			dah.samples[c*channels+1] = round((double)dah.samples[c*channels+1] * factor);
+			dit.samples[(dit.length-c)*channels+1] = round((double)dit.samples[(dit.length-c)*channels+1] * factor);
+			dah.samples[(dah.length-c)*channels+1] = round((double)dah.samples[(dah.length-c)*channels+1] * factor);
 		}
 	}
 #if 0
@@ -275,17 +275,17 @@ void output(struct waveform *v)
 		int r;
 		if (!stereo) {
 			r = lame_encode_buffer(lame_flags,
-					       v->samples,
-					       NULL,
-					       v->length,
-					       mp3buf,
-					       mp3buf_size);
+			                       v->samples,
+			                       NULL,
+			                       v->length,
+			                       mp3buf,
+			                       mp3buf_size);
 		} else {
 			r = lame_encode_buffer_interleaved(lame_flags,
-							   v->samples,
-							   v->length,
-							   mp3buf,
-							   mp3buf_size);
+			                                   v->samples,
+			                                   v->length,
+			                                   mp3buf,
+			                                   mp3buf_size);
 		}
 		if (r < 0) {
 			fprintf(stderr, "LAME encoding error: %d\n", r);
@@ -352,7 +352,7 @@ wint_t translate_utf(wint_t ch)
 		ch = 101;
 		break;
 
-        // Transformed to lookalikes:
+	// Transformed to lookalikes:
 	case 0xc1: // Á
 		ch = 'A';
 		break;
@@ -662,7 +662,7 @@ int main(int argc, char *argv[]) {
 		f = fopen(argv[optind], "rb");
 		if (!f) {
 			fprintf(stderr, "Error opening %s: %m\n",
-				argv[optind]);
+			                argv[optind]);
 			exit(1);
 		}
 		text_to_morse(f);
