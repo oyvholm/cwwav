@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=
+CFLAGS=-Wall -Wextra
 LDLIBS=-lm -lsndfile
 
 ifeq ($(LAME),1)
