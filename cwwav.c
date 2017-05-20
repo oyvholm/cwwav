@@ -371,7 +371,8 @@ wint_t translate_utf(wint_t ch)
 
 void send_char(wint_t ch)
 {
-	int c,len,code,ch1;
+	int c,len,code;
+	wint_t ch1;
 	ch = towupper(ch);
 	if (ch > 95) {
 		ch1 = translate_utf(ch);
