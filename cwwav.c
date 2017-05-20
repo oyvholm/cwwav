@@ -194,7 +194,7 @@ static const uint8_t morse_extended_table[] =
 
 void init()
 {
-	int c,d;
+	int c;
 	int channels = stereo ? 2 : 1;
 	double f_ta, f_tb;
 	ms_per_dit = 1200.0/wpm;
@@ -553,8 +553,6 @@ void print_help(const char *progname)
 }
 
 int main(int argc, char *argv[]) {
-	int c;
-	int space,nl;
 	FILE *f;
 
 	setlocale(LC_CTYPE, "");
