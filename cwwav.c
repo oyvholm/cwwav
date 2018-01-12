@@ -490,7 +490,7 @@ void text_to_morse(FILE *f) {
 			space++;
 			continue;
 		}
-		if (isspace(c)) {
+		if (iswspace(c)) {
 			space++;
 			continue;
 		}
